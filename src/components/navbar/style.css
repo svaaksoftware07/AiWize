@@ -1,0 +1,14 @@
+.nav-main-header{
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+/* .nav-request-button{
+    
+} */
+.nav-request-button span{
+    padding: 10px 20px;
+    background-color: rgba(255, 218, 20, 1);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+}
