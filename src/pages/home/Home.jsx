@@ -1,20 +1,31 @@
 import React from 'react'
 import "./style.css"
 import { Helmet } from 'react-helmet'
-import HeroSection from '../../components/heroSection/HeroSection'
+import HeroSection from './heroSection/HeroSection'
+import { Link } from 'react-router-dom'
+import OurProducts from './ourProducts/OurProducts'
+import Blog from './Blogs/Blog'
+import ProductVideo from './ProductVideo/ProductVideo'
+import About from './AboutSection/About'
+import FreeDemo from './freeDemo/FreeDemo'
+import JoinNow from '../../components/joinNow/JoinNow'
 function Home() {
     return (
         <>
             <Helmet>
                 <title>Home - AIWIZE LABS</title>
             </Helmet>
-            <div className="grid place-content-center h-screen">
-                <div className="text-center w-100 text-white text-2xl">
-                    <HeroSection />
-                    <h1 >Hello AIWize Labs </h1>
-                    <h3>Home</h3>
-                </div>
+            <div className="home-main m-0 p-0 overflow-x-hidden" >
+
+                <HeroSection />
+                <OurProducts />
+                <FreeDemo />
+                <About />
+                <Blog />
+                <ProductVideo />
+                
             </div>
+            <JoinNow/>
         </>
     )
 }

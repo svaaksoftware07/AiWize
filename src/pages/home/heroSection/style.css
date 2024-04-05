@@ -1,0 +1,24 @@
+.hero-section-heading {
+    /* background: var(--yellow); */
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* This makes the text transparent */
+    -webkit-text-stroke: 3px var(--yellow);
+    /* This adds a stroke to the text */
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+}
+
+
+@media screen and (max-width: 678px) {
+    .hero-section-heading {
+        font-size: 20px;
+        font-weight: 500;
+        -webkit-text-stroke: 1px var(--yellow);
+    }
+}

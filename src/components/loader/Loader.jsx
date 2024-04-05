@@ -2,7 +2,17 @@ import React from 'react'
 import "./style.css"
 function Loader() {
   return (
-    <div>Loader</div>
+    <>
+      <div className="loader-main-header">
+        <div class="loadingspinner">
+          <div id="square1"></div>
+          <div id="square2"></div>
+          <div id="square3"></div>
+          <div id="square4"></div>
+          <div id="square5"></div>
+        </div>
+      </div>
+    </>
   )
 }
 
