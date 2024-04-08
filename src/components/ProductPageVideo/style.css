@@ -1,0 +1,22 @@
+.ProductPageVideo_img{
+    width: 65%;
+}
+.ProductPageVideo_div{
+    display: flex;
+}
+@media screen and (max-width:768px) {
+    
+    .ProductPageVideo_img{
+        width: 32%;
+    }
+}
+@media screen and (max-width:650px) {
+    .ProductPageVideo_img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:500px) {
+    .ProductPageVideo_img{
+        width: 50%;
+    }
+}

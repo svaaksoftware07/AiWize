@@ -2,29 +2,35 @@ import { useEffect, useState } from "react";
 import "./style.css";
 import { BsArrowUpRightSquareFill } from "react-icons/bs";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const OurProducts = () => {
   const products = [
     {
       name: "CHANKAYA",
-      description: "BUSINESS RULE ENGINE"
+      description: "BUSINESS RULE ENGINE",
+      url: "/product/CHANKAYA"
     },
     {
       name: "NatFlow",
-      description: "INTUITIVE ENTERPRISE JOURNEY BUILDER"
+      description: "INTUITIVE ENTERPRISE JOURNEY BUILDER",
+      url: "/product/NatFlow"
     },
     {
       name: "PayYes",
-      description: "ENTERPRISE COLLECTIONS SUITE"
+      description: "ENTERPRISE COLLECTIONS SUITE",
+      url: "/product/PayYes"
     },
     {
       name: "RADM",
       span: "x",
       description: "RAPID DEVELOPMENT MA",
       span2: "X",
-      description2: "IMIZED"
+      description2: "IMIZED",
+      url: "/product/RADM"
     }
   ];
+  
 
   const [index, setIndex] = useState(0)
   const [result,setResult]=useState(true)
@@ -53,12 +59,13 @@ const OurProducts = () => {
       </h1>
       <div className="our-product-main">
         {products.map((product, index) => (
-          <div key={index} className="OurProduct_div mobile-hide">
+          <Link key={index} to={product.url} className="OurProduct_div mobile-hide">
+          
             <div>
               <h3>{product.name}<sup>{product?.span2}</sup></h3>
               <p>{product.description}<sup>{product?.span2}</sup>{product?.description2}</p>
               <BsArrowUpRightSquareFill className="OurProduct_arrow" /></div>
-          </div>
+          </Link>
         ))}
       </div>
 
