@@ -25,7 +25,7 @@ function Navbar() {
                             <div className="flex-shrink-0 flex items-center">
                                 <img className="lg:block h-14 w-auto" src="assets/images/navLogo.png" alt="Workflow" />
                             </div>
-                            <div className="sm:ml-6 flex flex-col md:flex-row absolute">
+                            <div className="sm:ml-6 flex flex-col md:flex-row ">
                                 {
                                     data.map((item, index) =>
                                         <>
