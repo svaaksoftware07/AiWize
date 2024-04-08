@@ -14,7 +14,7 @@ const data=[
     {path:"/about", name:"About",element:<About/> , isPrivate:false},
     {path:"/blogs", name:"Blogs",element:<Blogs/> , isPrivate:false},
     {path:"/contact", name:"Contact",element:<Contact/> , isPrivate:false},
-    {path:"/product/CHANKAYA", name:"CHANKAYA",element:<Chankaya/> , isPrivate:false},
+    {path:"/product/:name", name:"Product Name",element:<Chankaya/> , isPrivate:false},
 ]
 
 export default data

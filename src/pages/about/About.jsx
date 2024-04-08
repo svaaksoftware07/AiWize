@@ -7,12 +7,27 @@ function About() {
       <Helmet>
         <title>About - AIWIZE LABS</title>
       </Helmet>
-      <div className="grid place-content-center h-screen bg-slate-800">
-        <div className="text-center w-100 text-white text-2xl">
-          <h1 >Hello AIWize Labs </h1>
-          <h3>About</h3>
+      <div className="hero-section-main text-white overflow-x-hidden" >
+        <div className={`bg-[url(assets/images/about/BannerHeroVideo.png)] bg-cover bg-no-repeat   w-screen h-scree md:h-auto sm:h-screen xl:h-[90vh] z-[-1]`}>
+            <div className='hero-section-group-one'>
+                <div className="">
+                <p className='text-3xl text-center'>Our Story</p>
+                <h3 className='hero-section-heading text-center'>ABOUT US</h3>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+
+    <div className="h-screen">
+            <div className="flex flex-col xl:flex-row p-8">
+                <div className='w-100 xl:w-50'>
+                   <p className='text-center xl:text-start '> 
+                   <span className='py-1 px-3'>OUR VISION</span>
+                   </p>
+                </div>
+                <div className='w-100 xl:w-50'></div>
+            </div>
+        </div>
 
     </>
   )

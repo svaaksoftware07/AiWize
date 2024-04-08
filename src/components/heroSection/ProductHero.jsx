@@ -3,8 +3,8 @@ import React from 'react'
 function ProductHero() {
   return (
     
-    <div className="hero-section-main text-white overflow-x-hidden" >
-    <div className={`bg-[url(assets/images/product/pruductHeroBg.jpeg)] bg-cover bg-no-repeat   w-screen h-screen z-[-1]`}>
+<div className="hero-section-main text-white overflow-x-hidden" >
+    <div className={`bg-[url(assets/images/product/pruductHeroBg.jpeg)] bg-cover bg-no-repeat   w-screen h-screen md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
         <div className='hero-section-group-one'>
             <div className='hero-section-tagline'>
                 <p className='bg-[#262626]'><img src='assets/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>Mind within Mind</i></p>
@@ -35,7 +35,7 @@ function ProductHero() {
                     </div>
                 </div>
 
-                <div className='hero-section-group-two-inner-two-button'><span className=' w-fit px-4 md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black'>Explore Now</span></div>
+                <div className='hero-section-group-two-inner-two-button mb-3'><span className=' w-fit px-4 md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black'>Explore Now</span></div>
             </div>
         </div>
     </div>

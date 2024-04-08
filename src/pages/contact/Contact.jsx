@@ -36,7 +36,7 @@ function Contact({setShowPopup}) {
               <div className="bg-[#FFDA14] rounded ">
                 <select name="" id="" className="text-xs h-8 placeholder-[#3d3c3c]">
                   <option value="USA">US</option>
-                  <option value="Ind">Ind</option>
+                  <option value="IND">IND</option>
                   <option value="CHN">CHN</option>
                   <option value="FRA">FRA</option>
                   <option value="RUS">RUS</option>
@@ -54,7 +54,7 @@ function Contact({setShowPopup}) {
                 <input type="checkbox"/>
                 <p>You agree to our friendly Privacy Policy.</p>
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit" onClick={handleGoBack}>Submit</button>
             </form>
           </div>
         </div>

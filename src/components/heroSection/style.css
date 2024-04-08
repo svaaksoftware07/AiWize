@@ -60,7 +60,6 @@
 }
 
 .hero-section-group-two-inner-two-button {
-
     display: none;
 }
 
@@ -222,7 +221,7 @@
 
     .hero-section-group-two-inner-one {
         width: 48%;
-        margin-top: 6rem;
+        margin-top: 2rem;
     }
 
     .hero-section-group-two-inner-one-text {
@@ -230,8 +229,9 @@
     }
 
     .hero-section-group-two-inner-one-text p {
-        text-align: center;
-        line-height: 30px
+        text-align: start;
+        line-height: 30px;
+        margin-left: 58px;
     }
 
     .hero-section-group-two-inner-one-button {
