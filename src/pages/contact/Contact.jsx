@@ -20,9 +20,9 @@ function Contact({setShowPopup}) {
           }
         `}
       </style>
-      <div className="grid place-content-center h-screen">
+      <div className="grid place-content-center h-scree ">
         <div>
-          <div className=""></div>
+          <div className="contact-background">
 
           <div className="contactUs_modal_container">
             <IoReturnUpBack onClick={handleGoBack} className="bg-[#FFDA14] rounded-full text-4xl p-2 font-bold md:mx-[12rem] cursor-pointer" />
@@ -58,6 +58,7 @@ function Contact({setShowPopup}) {
             </form>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

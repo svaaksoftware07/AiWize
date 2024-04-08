@@ -4,7 +4,7 @@ function Loader() {
   return (
     <>
       <div className="loader-main-header">
-        <div class="loadingspinner">
+        <div className="loadingspinner">
           <div id="square1"></div>
           <div id="square2"></div>
           <div id="square3"></div>

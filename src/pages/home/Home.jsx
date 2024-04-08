@@ -1,7 +1,7 @@
 import React from 'react'
 import "./style.css"
 import { Helmet } from 'react-helmet'
-import HeroSection from './heroSection/HeroSection'
+import HomeHero from '../../components/heroSection/HomeHero'
 import { Link } from 'react-router-dom'
 import OurProducts from './ourProducts/OurProducts'
 import Blog from './Blogs/Blog'
@@ -17,15 +17,16 @@ function Home() {
             </Helmet>
             <div className="home-main m-0 p-0 overflow-x-hidden" >
 
-                <HeroSection />
+                <HomeHero/>
+
                 <OurProducts />
                 <FreeDemo />
                 <About />
                 <Blog />
                 <ProductVideo />
-                
+
             </div>
-            <JoinNow/>
+            <JoinNow />
         </>
     )
 }

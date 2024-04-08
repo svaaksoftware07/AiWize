@@ -1,24 +1,54 @@
 .contactUs_modal_container {
-    position: fixed;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 53rem;
+  padding: 2rem;
+  z-index: 999;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  background-color: white;
+}
+
+.contactUs_modal_container input,
+.contactUs_modal_container select,
+.contactUs_modal_container textarea,
+.contactUs_modal_container button {
+  background-color: #ffda14;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.contact-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d9d8d4d8;
+
+}
+
+@media screen and (max-width: 768px) {
+  .contact-background {
+    position: relative;
+  }
+
+  .contactUs_modal_container {
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%; 
+    width: 100%;
     max-width: 53rem;
     padding: 2rem;
     z-index: 999;
     padding-top: 5rem;
     padding-bottom: 8rem;
-    background-color: #fff;
+    background-color: #ffffff;
   }
-  
-  .contactUs_modal_container input,
-  .contactUs_modal_container select,
-  .contactUs_modal_container textarea,
-  .contactUs_modal_container button {
-    background-color: #ffda14;
-    border-radius: 5px;
-    padding: 0.5rem;
-    font-size: 0.875rem; 
-  }
-  
+
+}

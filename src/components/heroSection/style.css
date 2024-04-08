@@ -43,12 +43,16 @@
 .hero-section-group-two-inner-one-text {
     font-size: 2rem;
     margin-top: 101px;
-
+    width: 100%;
+    display: block;
+    justify-content: center;
 }
 
 .hero-section-group-two-inner-one-text p {
-    text-align: center;
-    line-height: 40px
+    text-align: start;
+    line-height: 40px;
+    margin-left: 100px;
+    width:80%
 }
 
 .hero-section-group-two-inner-one-button {
@@ -79,6 +83,7 @@
 .hero-section-text {
     font-size: 2.5rem;
     text-align: start;
+    
 }
 
 .hero-section-text p {
@@ -134,11 +139,18 @@
 
     .hero-section-group-two-inner-one-text {
         font-size: 18px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        
     }
 
     .hero-section-group-two-inner-one-text p {
         text-align: center;
-        line-height: 21px
+        line-height: 21px;
+        margin-left: 0px;
+        padding:2px 8px;
+        width: 100%;
     }
 
     .hero-section-group-two-inner-one-button {
@@ -155,10 +167,14 @@
         font-size: 40px;
         font-weight: 500;
         -webkit-text-stroke: 1px var(--yellow);
+        padding: 5px 10px;
+        text-align: center;
     }
 
     .hero-section-text {
         font-size: 18px;
+        padding: 5px 10px;
+
     }
 
     .hero-section-text p {
