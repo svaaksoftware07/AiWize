@@ -6,7 +6,7 @@ import { MdMenu } from "react-icons/md";
 // navbar menu data 
 const data = [
     { path: "/", name: "Home" },
-    { path: "/products", name: "Products",arrow:true },
+    { path: "/products", name: "Products", arrow: true },
     { path: "/about", name: "About Us" },
     { path: "/blogs", name: "Blogs" },
     { path: "/contact", name: "Contact Us" }
@@ -15,7 +15,7 @@ const data = [
 
 function Navbar() {
     // get path name from url 
-    const {pathname}=useLocation()
+    const { pathname } = useLocation()
     return (
         <>
             <nav className="nav-main-header  pb-5 z-20 ">
@@ -25,12 +25,12 @@ function Navbar() {
                             <div className="flex-shrink-0 flex items-center">
                                 <img className="lg:block h-14 w-auto" src="assets/images/navLogo.png" alt="Workflow" />
                             </div>
-                            <div className="sm:ml-6 sm:flex">
+                            <div className="sm:ml-6 flex flex-col md:flex-row absolute">
                                 {
-                                    data.map((item,index)=>
-                                    <>
-                                    <Link to={item.path} key={index} className={`text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname===item.path?"active":null}`} >{item.name}{item?.arrow&&<span><img src="assets/gif/home/downArrow.gif" alt="" className='absolute top-2 left-0' /></span>}</Link>
-                                    </>
+                                    data.map((item, index) =>
+                                        <>
+                                            <Link to={item.path} key={index} className={`text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.path ? "active" : null}`} >{item.name}{item?.arrow && <span><img src="assets/gif/home/downArrow.gif" alt="" className='absolute top-2 left-0' /></span>}</Link>
+                                        </>
                                     )
                                 }
                             </div>
@@ -38,9 +38,9 @@ function Navbar() {
                                 <span>Request A Free Demo</span>
                             </div>
                         </div>
-                        {/* <div>
-                    <MdMenu />
-                </div> */}
+                        <div>
+                            <MdMenu/>
+                        </div>
                     </div>
                 </div>
 
