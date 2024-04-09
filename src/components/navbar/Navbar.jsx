@@ -1,14 +1,14 @@
 import "./style.css";
 import { Link, useLocation } from 'react-router-dom';
-import { MdMenu } from "react-icons/md";
 import Contact from '../../pages/contact/Contact';
 import { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
+import ProductPopUp from "../../pages/products/productPopUp/ProductPopUp";
 
 // Navbar menu data 
 const data = [
     { path: "/", name: "Home" },
-    { path: "/products", name: "Products", arrow: true },
+    { path: "", name: "Products", arrow: true },
     { path: "/about", name: "About Us" },
     { path: "/blogs", name: "Blogs" },
     { path: "", name: "Contact Us" },
@@ -18,9 +18,13 @@ function Navbar() {
     // get path name from url 
     const { pathname } = useLocation()
     const [showPopup, setShowPopup] = useState(false);
+    const [showPopup1, setShowPopup1] = useState(false);
 
     const handleContactClick = () => {
         setShowPopup(true);
+    };
+    const handleProductClick = () => {
+        setShowPopup1(true);
     };
 
     // nav toggler function 
@@ -42,7 +46,10 @@ function Navbar() {
                                     <>
                                         {item.name === "Contact Us" ? (
                                             <button onClick={handleContactClick} key={index} className={`text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.path ? "active" : null}`}>{item.name}</button>
-                                        ) : (
+                                        ) : item.name === "Products" ? (
+                                            <button onClick={handleProductClick} key={index} className={`text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.path ? "active" : null}`}>{item.name}{item?.arrow && <span className="hidden md:block"><img src="assets/gif/home/downArrow.gif" alt="" className='absolute top-2 left-0' /></span>}</button>
+                                        ) :
+                                         (
                                             <Link to={item.path} key={index} className={`text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.path ? "active" : null}`}>{item.name}{item?.arrow && <span className="hidden md:block"><img src="assets/gif/home/downArrow.gif" alt="" className='absolute top-2 left-0' /></span>}</Link>
                                         )}
                                     </>
@@ -58,8 +65,8 @@ function Navbar() {
                     </div>
                 </div >
             </nav >
-            {showPopup && <Contact setShowPopup={setShowPopup} />
-            }
+            {showPopup && <Contact setShowPopup={setShowPopup} />}
+            {showPopup1 && <ProductPopUp setShowPopup1={setShowPopup1} />}
         </>
     );
 }

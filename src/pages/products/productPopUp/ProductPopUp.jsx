@@ -1,7 +1,12 @@
+/* eslint-disable react/prop-types */
 import { IoReturnUpBack } from "react-icons/io5";
 import "./style.css";
 
-const ProductPopUp = () => {
+const ProductPopUp = ({setShowPopup1}) => {
+  const handleGoBack = () => {
+    setShowPopup1(false);
+  };
+
   const products = [
     {
       name: "CHANAKYA",
@@ -35,12 +40,12 @@ const ProductPopUp = () => {
 
         <div className="ProductPopUp_modal_container ">
           <div className="flex gap-5">
-            <IoReturnUpBack className="bg-[#FFDA14] rounded-full text-4xl p-2 font-bold text-black" />
+            <IoReturnUpBack onClick={handleGoBack} className="bg-[#FFDA14] rounded-full text-4xl p-2 font-bold text-black" />
             <h3 className="text-xl text-gray-400 flex items-center">Our Products & Services</h3>
           </div>
           <div className="flex flex-wrap pl-0 md:pl-14 py-10 product_popup_div">  
             {products.map((product, index) => (
-              <div key={index} className={`w-1/3 py-2`}>
+              <div key={index} className={`w-1/2 py-2`}>
                 <h3 className="text-yellow-300 text-xl font-semibold">{product.name}</h3>
                 <p className="text-sm text-gray-400">{product.description}</p>
               </div>
