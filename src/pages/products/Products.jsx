@@ -1,10 +1,10 @@
-import React from 'react'
 import "./style.css"
 import { Helmet } from 'react-helmet'
 import ProductHero from '../../components/heroSection/ProductHero'
 import products from '../../assets/productData/product'
 import { useParams } from 'react-router-dom';
 import ProductPageAbout from './productPageAbout/ProductPageAbout'
+import AskQuestion from '../../components/askQuestion.jsx/AskQuestion'
 function Products() {
     const {name}= useParams()
    const data= products.find((item)=>item.name===name)
@@ -16,6 +16,7 @@ function Products() {
             </Helmet>
             <ProductHero data={data}/>
             <ProductPageAbout features={data}/>
+            <AskQuestion />
         </>
     )
 }

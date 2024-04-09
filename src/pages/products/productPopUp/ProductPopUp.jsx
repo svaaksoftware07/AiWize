@@ -30,13 +30,9 @@ const ProductPopUp = ({setShowPopup1}) => {
 
     <>
     <style>
-        {`
-          html, body {
-            overflow: hidden;
-          }
-        `}
+        {`  html, body { overflow: hidden;} `}
       </style>
-        <div className="ProductPopUp_modal_wrapper"></div>
+        <div className="ProductPopUp_modal_wrapper" onClick={handleGoBack}></div>
 
         <div className="ProductPopUp_modal_container ">
           <div className="flex gap-5">

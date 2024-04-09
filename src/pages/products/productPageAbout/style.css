@@ -12,14 +12,12 @@
   }
   
   .feature:nth-child(4) {
-    color: red;
-    background-color: green;
+    background-color: #FFDA14;
   }
   .feature:nth-child(5) {
     background-color: #FFFBE5;
   }
-  
-  .feature:nth-child(4) {
-    background-color: #000000
-    ;
+  .feature:nth-child(6) {
+    color: yellow;
+    background-color: black;
   }
