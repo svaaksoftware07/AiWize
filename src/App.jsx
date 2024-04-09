@@ -3,9 +3,15 @@ import { Route, Routes } from 'react-router-dom';
 import NavData from "./router/router"
 import "./App.css"
 import Footer from './components/footer/Footer';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css'; 
 
 function App() {
- 
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       <Navbar />

@@ -1,21 +1,21 @@
 import React from 'react'
 
-function ProductHero() {
+function ProductHero({data}) {
   return (
     
 <div className="hero-section-main text-white overflow-x-hidden" >
     <div className={`bg-[url(assets/images/product/pruductHeroBg.jpeg)] bg-cover bg-no-repeat   w-screen h-screen md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
         <div className='hero-section-group-one'>
             <div className='hero-section-tagline'>
-                <p className='bg-[#262626]'><img src='assets/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>Mind within Mind</i></p>
+                <p className='bg-[#262626]'><img src='assets/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>{data.tagline}</i></p>
             </div>
 
             <div className="hero-section-group-two">
                 <div className="hero-section-group-two-inner-one mb-8">
                     <div className='hero-section-group-two-inner-one-text'>
-                        <p >Empowering Business for Ease of Use & Efficiency</p>
+                        <p >{data.leftText}</p>
                     </div>
-                    <div className='hero-section-group-two-inner-one-button'><span className=' w-[100px] md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black'>Explore Now</span></div>
+                    <div className='hero-section-group-two-inner-one-button'><span className=' w-[100px] md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black'>{data.button}</span></div>
                 </div>
 
                 <div className='w-24 md:w-[4%] '>
@@ -27,10 +27,10 @@ function ProductHero() {
                         <div className=''>
                             {/* <img src="assets/images/RADM.png" alt="" /> */}
 
-                            <h1 className='hero-section-heading'>Chanakya</h1>
+                            <h1 className='hero-section-heading'>{data.name}</h1>
                         </div>
                         <div className='hero-section-text'>
-                            <p>Natural Language Processing and Generative AI</p>
+                            <p>{data.rightText}</p>
                         </div>
                     </div>
                 </div>

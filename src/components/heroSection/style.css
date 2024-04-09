@@ -41,7 +41,7 @@
 }
 
 .hero-section-group-two-inner-one-text {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-top: 101px;
     width: 100%;
     display: block;
@@ -64,19 +64,16 @@
 }
 
 .hero-section-heading {
-    /* background: var(--yellow); */
     background-size: 200% 200%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* This makes the text transparent */
-    -webkit-text-stroke: 3px var(--yellow);
-    /* This adds a stroke to the text */
+    -webkit-text-stroke: 1px var(--yellow);
     font-size: 96px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 120%;
-    text-transform: uppercase;
     color: #000;
     position: relative;
+    transition: all .3s ease;
 }
 
 .hero-section-text {

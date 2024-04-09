@@ -13,7 +13,7 @@ const data = [
         description3: "imized"
     },
     {
-        heading: "NATFLOW",
+        heading: "NatFLow",
         description1: "Intuitive enterprise",
         description2: "Journey Builder"
     },
@@ -29,6 +29,7 @@ const data = [
     }
 ]
 function HomeHero() {
+   
 
     const [count, setCount] = useState(3000)
     const [index, setIndex] = useState(0)
@@ -50,7 +51,7 @@ function HomeHero() {
 
     return (
         <div className="hero-section-main text-white overflow-x-hidden" >
-            <div className={`bg-[url(assets/gif/home/heroSection.gif)] bg-cover bg-no-repeat   w-screen h-screen z-[-1]`}>
+            <div className={`bg-[url(assets/gif/home/heroSection.gif)] bg-cover bg-no-repeat   w-screen h-screen md:h-[700px] xl:h-screen z-[-1]`}>
                 <div className='hero-section-group-one'>
                     <div className='hero-section-tagline'>
                         <p className='bg-[#262626]'><img src='assets/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>We Make AI Work Hard</i></p>
@@ -75,11 +76,9 @@ function HomeHero() {
                             <div className="my-8 md:mt-10">
                                 <div className=''>
                                     {/* <img src="assets/images/RADM.png" alt="" /> */}
-
                                     <h1 className='hero-section-heading'>{data[index].heading}<span className='text-[40px] md:text-[64px] absolute top-[-10px] md:top-[-50px] mx-2'>{data[index]?.span1}</span></h1>
                                 </div>
                                 <div className='hero-section-text'>
-
                                     <p>{data[index].description1}</p>
                                     <p >{data[index].description2}<span className='text-lg flex items-start mx-1 w-100 '>{data[index]?.span2}</span>{data[index]?.description3}</p>
                                 </div>

@@ -1,3 +1,5 @@
+import Aos from "aos";
+import { useEffect } from "react";
 const ProductVideo = () => {
   // Define an array containing the data for each product video
   const videos = [
@@ -15,8 +17,17 @@ const ProductVideo = () => {
     },
   ];
 
+  useEffect(() => {
+    Aos.init({
+        disable: 'mobile',
+        duration: 2000
+    })
+}, [])
+
   return (
-    <div className="flex flex-col items-center py-6 bg-[#fffbe5] md:h-screen">
+    <div 
+    data-aos="fade-left"
+    className="flex flex-col items-center py-6 md:py-10 bg-[#fffbe5] md:h-[650px] xl:h-screen">
       <p className="text-lg">{`What’s `}New in the market</p>
       <h1 className="text-center heading_1 pb-6">
         Explore Our Product Videos

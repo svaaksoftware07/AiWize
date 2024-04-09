@@ -1,3 +1,5 @@
+import Aos from "aos";
+import { useEffect } from "react";
 const Blog = () => {
   const blogs = [
     {
@@ -16,9 +18,18 @@ const Blog = () => {
       title: "Accelerating Innovation: The Power of Low-Code/No-Code Platforms for Indian Financial Organizations"
     },
   ];
+  useEffect(() => {
+    Aos.init({
+        disable: 'mobile',
+        duration: 2000
+    })
+}, [])
 
   return (
-    <div className="flex flex-col py-10 bg-white md:h-screen">
+    <div
+     data-aos="fade-right"
+     className="flex flex-col py-10 bg-white md:h-[700px] xl:h-screen"
+     >
       <div>
         <h1 className="text-center heading_1 pb-6">
           Our Recent Blogs
@@ -29,7 +40,7 @@ const Blog = () => {
           <div key={index} className="w-[60%] md:w-[20%] flex flex-col gap-5 h-[410px] relative">
             <img src={blog.image} alt="" />
             <span className="text-gray-500 text-xs py-1 border-b-[1px] border-gray-500">{blog.date}</span>
-            <h3 className="font-medium text-lg leading-5">
+            <h3 className="font-medium text-base leading-5">
               {blog.title}
             </h3>
             <button className="bg-[var(--yellow)]  button w-[150px] absolute bottom-0 left-0"> Read More </button>

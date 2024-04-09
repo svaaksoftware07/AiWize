@@ -16,9 +16,7 @@ function Home() {
                 <title>Home - AIWIZE LABS</title>
             </Helmet>
             <div className="home-main m-0 p-0 overflow-x-hidden" >
-
                 <HomeHero/>
-
                 <OurProducts />
                 <FreeDemo />
                 <About />

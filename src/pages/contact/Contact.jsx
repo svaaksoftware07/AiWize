@@ -45,7 +45,7 @@ function Contact({setShowPopup}) {
                 <input
                   type="tel"
                   placeholder="+91 1234567890"
-                  className="w-[75%] outline-none text-xs h-8 placeholder-[#3d3c3c]"
+                  className="w-[70%] outline-none text-xs h-8 placeholder-[#3d3c3c]"
                 />
               </div>
               <input type="text" placeholder="Name of the Organisation" className="text-xs h-8 placeholder-[#3d3c3c]" />

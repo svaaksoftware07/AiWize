@@ -24,6 +24,7 @@ function About() {
                    <p className='text-center xl:text-start '> 
                    <span className='py-1 px-3'>OUR VISION</span>
                    </p>
+                   <h3 className='text-[3rem]'>Turn Your <span className='text-[var(--yellow)]'>Ideas</span> Into <span className='text-[var(--yellow)]'>Reality</span>.</h3>
                 </div>
                 <div className='w-100 xl:w-50'></div>
             </div>

@@ -4,8 +4,15 @@ import { BsArrowUpRightSquareFill } from "react-icons/bs";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import products from "../../../assets/productData/product";
+import Aos from "aos";
 const OurProducts = () => {
   
+  useEffect(() => {
+    Aos.init({
+        disable: 'mobile',
+        duration: 2000
+    })
+}, [])
 
   const [index, setIndex] = useState(0)
   const [result, setResult] = useState(true)
@@ -29,15 +36,15 @@ const OurProducts = () => {
 
   const navigate=useNavigate()
   return (
-    <div className="OurProduct h-auto">
+    <div className="OurProduct h-auto over">
       <h1 className="text-center heading_1 pb-6 w-100">
         Our <span>Products</span> & <span>Services</span>
       </h1>
       <div className="our-product-main">
         {products.map((product, index) => (
-          <div key={index} className="OurProduct_div mobile-hide" onClick={()=>navigate(product.url)}>
+          <div key={index} className="OurProduct_div mobile-hide" data-aos="zoom-in-up" onClick={()=>navigate(product.url)}>
             <div>
-              <h3>{product.name}<sup>{product?.span2}</sup></h3>
+              <h3 >{product.name}<sup>{product?.span2}</sup></h3>
               <p>{product.description}<sup>{product?.span2}</sup>{product?.description2}</p>
               <BsArrowUpRightSquareFill className="OurProduct_arrow" /></div>
           </div>

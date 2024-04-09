@@ -12,7 +12,7 @@ function JoinNow() {
                         </div>
                         <div className='flex justify-between items-center bg-white rounded-full p-1'>
                             <input className='md:p-3 px-2  md:px-4 border-none outline-none text-[12px] md:w-[250px] rounded-full' type="text" placeholder='Enter Your Email' />
-                            <span className='w-[5rem] py-2 bg-[var(--yellow)] rounded-full mx-1 cursor-pointer text-center'>Join Now</span>
+                            <span className='w-[6rem] py-3 flex items-center justify-center bg-[var(--yellow)] text-[.89rem] rounded-full mx-1 cursor-pointer text-center'>Join Now</span>
                         </div>
                     </div>
                 </div>
