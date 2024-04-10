@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./style.css"
 import { Helmet } from 'react-helmet'
 import { IoIosCheckmarkCircleOutline } from 'react-icons/io'
@@ -6,7 +6,7 @@ import { IoCallOutline, IoLayersOutline, IoSettingsOutline } from 'react-icons/i
 import { FaFacebook, FaGlobeAmericas, FaInstagram } from 'react-icons/fa'
 import { PiChartBar } from 'react-icons/pi'
 import { FaXTwitter } from 'react-icons/fa6'
-
+import Aos from "aos";
 const data = [
   {
     icon: <IoLayersOutline className='text-[1.6rem] text-white' />,
@@ -51,7 +51,13 @@ const teamData = [
   }
 ]
 function About() {
-
+  // for animation 
+  useEffect(() => {
+    Aos.init({
+      disable: 'mobile',
+      duration: 2000
+    })
+  }, [])
   return (
     <>
       <Helmet>
@@ -59,7 +65,7 @@ function About() {
       </Helmet>
 
       {/* hero section start  */}
-      <div className=" text-white overflow-x-hidden">
+      <div  className="text-white overflow-x-hidden">
         <div className={`bg-[url(/images/about/BannerHeroVideo.png)] bg-auto bg-no-repeat w-screen h-[500px] md:h-[500px] sm:h-screen lg:h-[90vh] z-[-1]`}>
           <div className='hero-section-group-one'>
             <div className="">
@@ -76,7 +82,7 @@ function About() {
 
       <div className="p-3 py-10 md:py-8 md:px-32 w-100">
         {/* vision start   */}
-        <div className="h-100 flex">
+        <div data-aos="fade-up" className="h-100 flex">
           <div className="flex flex-col lg:flex-row lg:justify-between md:p-8">
             <div className='w-100 lg:w-[50%] '>
               <p className='text-center lg:text-start mb-3'>
@@ -105,7 +111,7 @@ function About() {
         {/* vision end */}
 
         {/* counting section start  */}
-        <div className="about-count flex flex-wrap justify-around py-10">
+        <div data-aos="fade-down" className="about-count flex flex-wrap justify-around py-10">
           <div className=''>
             <h3>1128+</h3>
             <span>Successful Work</span>
@@ -127,7 +133,7 @@ function About() {
         {/* counting end  */}
 
         {/* core values  */}
-        <div className="h-100 flex">
+        <div data-aos="fade-up-right" className="h-100 flex">
           <div className="flex flex-col lg:flex-row lg:justify-between md:p-8">
             <div className='w-100  '>
               <p className='text-center lg:text-start mb-3 uppercase'>
@@ -179,7 +185,7 @@ function About() {
         {/* core valuse end */}
 
         {/* our history start  */}
-        <div className="h-100 my-5-3">
+        <div data-aos="fade-up-left" className="h-100 my-5-3">
           <div className='w-100'>
             <p className='text-center  mb-3'>
               <span className='pt-2 pb-1 px-3 bg-[var(--yellow)] rounded-full text-[12px] font-bold'>Our History</span>
@@ -195,7 +201,7 @@ function About() {
       </div>
 
       {/* our team start  */}
-      <div className="p-3 py-10 md:py-8 md:px-32 w-100 bg-black">
+      <div  data-aos="zoom-in" className="p-3 py-10 md:py-8 md:px-32 w-100 bg-black">
         <div className="h-100 my-5-3 py-10">
           <div className='w-100 lg:w-10/12'>
             <p className='text-center lg:text-start  mb-5'>
@@ -231,9 +237,9 @@ function About() {
       {/* our team end */}
 
       {/* call start  */}
-      <div className="px-4 md:px-40 py-24 md:py-32">
+      <div data-aos="zoom-in-up" className="px-4 md:px-40 py-24 md:py-32">
         <div className="bg-[#181818] rounded-3xl flex flex-col lg:flex-row">
-        <div className="lg:hidden flex w-100 justify-start mb-3">
+          <div className="lg:hidden flex w-100 justify-start mb-3">
             <div className='px-5'>
               <img src="images/about/aboutContact.png" alt="" />
             </div>
@@ -244,7 +250,7 @@ function About() {
               <h3 className='text-white text-[24px] text-center lg:text-start  lg:text-[40px] uppercase lg:leading-[46px] mb-3'>Better Consult, <span className='text-[var(--yellow)]'>Better</span> Results</h3>
               <p className='text-white text-[12px] lg:text-[14px] text-center lg:text-start lg:leading-6 mb-3'>Lorem ipsum dolor sit amet consectetur. Amet in sed accumsan amet dolor velit. A amet sit diam sed. Lacinia est vivamus egestas quis semper. Facilisi et molestie nunc tristique tellus eget.</p>
               <div className='flex justify-center lg:justify-start pb-10'>
-              <button className='rounded-full bg-[var(--yellow)] text-[14px] py-2 px-5 flex items-center justify-center'><IoCallOutline/> +800 1234 654 </button>
+                <button className='rounded-full bg-[var(--yellow)] text-[14px] py-2 px-5 flex items-center justify-center'><IoCallOutline /> +800 1234 654 </button>
               </div>
             </div>
           </div>
