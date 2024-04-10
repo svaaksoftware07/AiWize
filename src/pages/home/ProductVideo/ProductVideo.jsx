@@ -4,15 +4,15 @@ const ProductVideo = () => {
   // Define an array containing the data for each product video
   const videos = [
     {
-      image: "/assets/images/home/videoPicture1.png",
+      image: "/images/home/videoPicture1.png",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing."
     },
     {
-      image: "/assets/images/home/videoPicture2.png",
+      image: "/images/home/videoPicture2.png",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing."
     },
     {
-      image: "/assets/images/home/videoPicture3.png",
+      image: "/images/home/videoPicture3.png",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing."
     },
   ];

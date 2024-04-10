@@ -62,7 +62,7 @@ display: none;
 
 .OurProduct_div:nth-child(odd) {
     color: white;
-    background-image: url("assets/images/home/prouductSectionRectangle1.png");
+    background-image: url("/images/home/prouductSectionRectangle1.png");
     background-size: cover;
 
 }
@@ -83,7 +83,7 @@ display: none;
 
 .OurProduct_div:nth-child(even) {
     color: white;
-    background-image: url("assets/images/home/prouductSectionRectangle2.png");
+    background-image: url("/images/home/prouductSectionRectangle2.png");
     background-size: cover;
 
 }
@@ -164,7 +164,7 @@ display: none;
     .odd_div_product {
         color: white;
         width: 300px;
-        background-image: url("assets/images/home/prouductSectionRectangle1.png");
+        background-image: url("/images/home/prouductSectionRectangle1.png");
         background-size:contain;
         background-repeat:no-repeat;
     }
@@ -186,7 +186,7 @@ display: none;
     .even_div_product {
         color: white;
         width: 300px;
-        background-image: url("assets/images/home/prouductSectionRectangle2.png");
+        background-image: url("/images/home/prouductSectionRectangle2.png");
         background-size:contain;
         background-repeat:no-repeat;
 

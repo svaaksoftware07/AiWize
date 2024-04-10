@@ -4,10 +4,10 @@ function ProductHero({data}) {
   return (
     
 <div className="hero-section-main text-white overflow-x-hidden" >
-    <div className={`bg-[url(assets/images/product/pruductHeroBg.jpeg)] bg-cover bg-no-repeat   w-screen h-screen md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
+    <div className={`bg-[url(/images/product/pruductHeroBg.jpeg)] bg-cover bg-no-repeat   w-screen h-screen md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
         <div className='hero-section-group-one'>
             <div className='hero-section-tagline'>
-                <p className='bg-[#262626]'><img src='assets/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>{data.tagline}</i></p>
+                <p className='bg-[#262626]'><img src='/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>{data.tagline}</i></p>
             </div>
 
             <div className="hero-section-group-two">

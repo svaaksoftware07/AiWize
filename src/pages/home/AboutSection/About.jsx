@@ -12,13 +12,13 @@ function About() {
     return (
         <>
             {/* About */}
-            <div data-aos="zoom-out" className="flex justify-center text-center bg-[url(assets/gif/home/aboutGif.gif)] bg-cover md:h-[900px] xl:h-screen ">
+            <div data-aos="zoom-out" className="flex justify-center text-center bg-[url(/gif/home/aboutGif.gif)] bg-cover md:h-[900px] xl:h-screen ">
                 <div className="py-16 text-center w-screen bg-[#36373385] flex items-center">
                     <div>
                         <h1 className='heading_1 text-white '>At <span className='text-[var(--yellow)]'>Aiwize Labs</span></h1>
-                        <h1 className='heading_1 text-white'>We follow <span className='border-solid border-b-2 border-[var(--yellow)] rounded-bl'>Customer First</span> Policy</h1>
+                        <h1 className='heading_1 text-white'>We follow <span className='border-solid border-b-4 border-[var(--yellow)] pb-2' style={{borderRadius:"0 0 50% 50% / 0 0 20px 20px"}}>Customer First</span> Policy</h1>
                         <div className="flex justify-center my-5">
-                            <p className='text-center px-3 text-[15px] md:w-3/5 md:text-[1.2rem] text-white md:leading-8 mb-3'>
+                            <p className='text-center px-3 text-[14px] md:w-3/5 md:text-[1.2rem] text-white md:leading-8 mb-3'>
                                 We do everything around the customer, its efficiency and convenience. The theme of all our products emanates from the question -
                                 “What's in it for my customer?”
                                 It's our endeavour to empower each and every user in the business organization,

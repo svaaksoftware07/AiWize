@@ -3,17 +3,17 @@ import { useEffect } from "react";
 const Blog = () => {
   const blogs = [
     {
-      image: "/assets/images/home/blogPicture1.png",
+      image: "/images/home/blogPicture1.png",
       date: "19 April 2024",
       title: "The Toll of High Go-To-Market Costs on Indian Financial Organizations"
     },
     {
-      image: "/assets/images/home/blogPicture2.png",
+      image: "/images/home/blogPicture2.png",
       date: "17 April 2024",
       title: "Empowering Indian Financial Organizationswith Business Rule Engines: Unlocking Agility and Maximizing ROI"
     },
     {
-      image: "/assets/images/home/blogPicture3.png",
+      image: "/images/home/blogPicture3.png",
       date: "12 April 2024",
       title: "Accelerating Innovation: The Power of Low-Code/No-Code Platforms for Indian Financial Organizations"
     },

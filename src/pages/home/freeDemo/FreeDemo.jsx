@@ -20,7 +20,7 @@ function FreeDemo() {
                             <h1 className='heading_1 text-center md:text-start mb-5'>Try our free Demos</h1>
 
                             <div className="w-screen md:p-5 md:hidden">
-                                <img src="assets/images/home/tryWomen.png" className='w-[100%] h-[100%] object-contain' alt="" />
+                                <img src="/images/home/tryWomen.png" className='w-[100%] h-[100%] object-contain' alt="" />
                             </div>
                             <p className='text-center pt-3 md:text-start text-base mb-5 md:w-[60%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officiis voluptas dignissimos omnis perferendis sequi quis, cum nulla debitis inventore?</p>
                         </div>
@@ -34,7 +34,7 @@ function FreeDemo() {
                         </div>
                     </div>
                     <div className=" hidden md:block w-screen md:p-5 md:pb-0 md:w-[45%]">
-                        <img src="assets/images/home/tryWomen.png" className='w-[100%] h-[100%] object-cover' alt="" />
+                        <img src="/images/home/tryWomen.png" className='w-[100%] h-[100%] object-cover' alt="" />
                     </div>
                 </div>
             </div>

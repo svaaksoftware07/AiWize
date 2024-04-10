@@ -8,7 +8,7 @@ function About() {
         <title>About - AIWIZE LABS</title>
       </Helmet>
       <div className="hero-section-main text-white overflow-x-hidden" >
-        <div className={`bg-[url(assets/images/about/BannerHeroVideo.png)] bg-cover bg-no-repeat   w-screen h-scree md:h-auto sm:h-screen xl:h-[90vh] z-[-1]`}>
+        <div className={`bg-[url(/images/about/BannerHeroVideo.png)] bg-cover bg-no-repeat   w-screen h-scree md:h-auto sm:h-screen xl:h-[90vh] z-[-1]`}>
             <div className='hero-section-group-one'>
                 <div className="">
                 <p className='text-3xl text-center'>Our Story</p>

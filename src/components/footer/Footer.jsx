@@ -46,7 +46,7 @@ function Footer() {
     <div className=" bg-black text-gray-400 flex flex-col gap-0 md:gap-20 py-4 footer ">
       <div className="flex justify-around flex-wrap footer1 pt-8">
         <div>
-          <img src="assets/images/navLogo.png" alt="" className="w-32 mt-[-18px]"  />
+          <img src="/images/navLogo.png" alt="" className="w-32 mt-[-18px]"  />
         </div>
         {sections.map((section, index) => (
           <div key={index} className="flex flex-col gap-3 uppercase">

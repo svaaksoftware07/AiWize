@@ -176,6 +176,7 @@
     .hero-section-text p {
         line-height: 20px;
         justify-content: center;
+        text-align: center;
     }
 }
 

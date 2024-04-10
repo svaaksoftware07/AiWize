@@ -26,7 +26,7 @@ const ProductPageAbout = ({ features }) => {
               </div>
             ))
           ) : (
-            <img src="/assets/images/ProductPageAboutChankya.png" alt="" className="W-52 h-52"/>
+            <img src="/images/ProductPageAboutChankya.png" alt="" className="W-52 h-52"/>
           )}
         </div>
       </div>
