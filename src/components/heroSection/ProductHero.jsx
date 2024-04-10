@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 
 function ProductHero({data}) {
@@ -27,7 +28,7 @@ function ProductHero({data}) {
                         <div className=''>
                             {/* <img src="assets/images/RADM.png" alt="" /> */}
 
-                            <h1 className='hero-section-heading'>{data.name}</h1>
+                            <h1 className='hero-section-heading'>{data.name}<span className='text-[40px] md:text-[64px] absolute top-[-10px] md:top-[-50px] mx-2'>{data?.span}</span></h1>
                         </div>
                         <div className='hero-section-text'>
                             <p>{data.rightText}</p>

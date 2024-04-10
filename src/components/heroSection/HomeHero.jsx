@@ -35,6 +35,7 @@ function HomeHero() {
     const [index, setIndex] = useState(0)
 
     useEffect(() => {
+        
         let interval;
         if (index < data.length - 1) {
             interval = setInterval(() => {

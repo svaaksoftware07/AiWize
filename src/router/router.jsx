@@ -3,7 +3,6 @@ import About from "../pages/about/About";
 import Blogs from "../pages/blogs/Blogs";
 import Contact from "../pages/contact/Contact";
 import Home from "../pages/home/Home";
-import Chankaya from "../pages/products/Chankya/Chankaya";
 import Products from "../pages/products/Products";
 
 

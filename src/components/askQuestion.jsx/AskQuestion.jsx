@@ -66,7 +66,7 @@ const AskQuestion = () => {
           </div>
         ))}
       </div>
-      <div className=" text-center bg-black w-[80%] md:w-[70%] rounded-xl py-3">
+      <div className=" text-center bg-black w-[80%] md:w-[70%] px-4 md:px-0 rounded-xl py-3">
         <h5 className="text-[18px] text-white pb-4">Still have questions?</h5>
         <p className="text-[15px] text-[#F3F3F3] pb-3">
           {`Can’t`} find the answer {`you’re`} looking for? Please chat to our friendly
