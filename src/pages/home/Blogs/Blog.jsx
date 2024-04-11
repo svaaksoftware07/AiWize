@@ -26,7 +26,7 @@ const Blog = () => {
      >
       <div>
         <h1 className="text-center heading_1 pb-6">
-          Our Recent Blogs
+          All Blogs
         </h1>
       </div>
       <div className="hidden md:flex justify-center flex-wrap gap-10 " >

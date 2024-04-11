@@ -12,16 +12,16 @@ function Blogs() {
       </Helmet>
       <div className="hero-section-main text-white overflow-x-hidden">
         <div
-          className={`bg-[url(/images/blog/BannerHeroVideo.png)] bg-cover bg-center bg-no-repeat   w-screen h-[90vh] sm:h-screen xl:h-[70vh] z-[-1]`}
+          className={`bg-[url(/images/blog/BannerHeroVideo.png)]  bg-auto bg-no-repeat w-screen h-[500px] md:h-[500px] sm:h-screen lg:h-[100vh] z-[-1]`}
         >
           <div className="hero-section-group-one">
             <div className="">
-              <p className="text-3xl text-center">Let’s Check</p>
-              <div className="flex">
+              <p className="text-3xl text-center mb-10">Let’s Check</p>
+              <div className="flex items-center">
                 <h3 className="hero-section-heading text-center">
                   WHAT’S NEW
                 </h3>
-                <img src="/gif/blogHeaderGIf.gif" alt="" className="w-20 h-20 rotate-[270deg]" />
+                <img src="/gif/blogHeaderGIf.gif" alt="" className="w-16 h-16 md:w-28 md:h-28 rotate-[270deg]" />
               </div>
             </div>
           </div>

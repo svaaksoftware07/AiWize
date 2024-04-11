@@ -5,7 +5,7 @@ const ProductPageAbout = ({ features }) => {
   return (
     <>
       <div className="flex flex-col justify-center items-center pt-40 text-center xl:px-60">
-        <span className="text-[var(--yellow)] font-semibold text-[30px] mb-8">What is {features?.name}</span>
+        <span className="text-[var(--yellow)] font-semibold text-[30px] mb-8">What is {features?.name}<sup>{features?.span}</sup></span>
         <h3 className="text-3xl font-bold pb-14 md:text-[64px] leading-3 md:leading-normal">
           {features?.heading}
         </h3>

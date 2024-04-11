@@ -36,8 +36,8 @@ const ProductPageVideo = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row bg-black text-white py-10 xl:h-screen ProductPageVideo_Maindiv">
-      <div className="relative mb-5 h-[320px] xl:h-[500px] w-full xl:w-1/2 ProductPageVideo_div">
+    <div className="flex justify-center lg:justify-start flex-col md:flex-row bg-black text-white py-10 xl:h-screen ProductPageVideo_Maindiv">
+      <div className="relative  flex justify-start mb-5 h-[320px] xl:h-[500px] w-full xl:w-1/2 lg:ml-[-39px] ProductPageVideo_div">
         {ImageData.map((item, index) => (
           <img
             key={index}
