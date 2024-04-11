@@ -25,7 +25,7 @@ function RequestPage({setShowPopup2}) {
 
           <div className="contactUs_modal_container">
             <IoReturnUpBack onClick={handleGoBack} className="bg-[#FFDA14] rounded-full text-4xl p-2 font-bold md:mx-[12rem] cursor-pointer" />
-            <h3 className="text-center font-semibold text-2xl py-2">Contact Us</h3>
+            <h3 className="text-center font-semibold text-2xl py-2">Get in touch</h3>
             <p className="text-center text-lg pb-6 text-[#667085]">
               We’d love to hear from you. Please fill out this form.
             </p>
