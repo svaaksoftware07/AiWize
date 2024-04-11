@@ -1,23 +1,17 @@
 import Aos from "aos";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+// import { FaLinkedin } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa";
+// import { FaTwitter } from "react-icons/fa";
+import blogs from "../../../assets/BlogData.json";
+
 const Blog = () => {
-  const blogs = [
-    {
-      image: "/images/home/blogPicture1.png",
-      date: "19 April 2024",
-      title: "The Toll of High Go-To-Market Costs on Indian Financial Organizations"
-    },
-    {
-      image: "/images/home/blogPicture2.png",
-      date: "17 April 2024",
-      title: "Empowering Indian Financial Organizationswith Business Rule Engines: Unlocking Agility and Maximizing ROI"
-    },
-    {
-      image: "/images/home/blogPicture3.png",
-      date: "12 April 2024",
-      title: "Accelerating Innovation: The Power of Low-Code/No-Code Platforms for Indian Financial Organizations"
-    },
-  ];
+  const navigate = useNavigate();
+  function handleBlog(id){
+    navigate(`/blog/${id}`);
+  }
   useEffect(() => {
     Aos.init({
         disable: 'mobile',
@@ -35,7 +29,7 @@ const Blog = () => {
           Our Recent Blogs
         </h1>
       </div>
-      <div className="hidden md:flex justify-center flex-wrap gap-10 ">
+      <div className="hidden md:flex justify-center flex-wrap gap-10 " >
         {blogs.map((blog, index) => (
           <div key={index} className="w-[60%] md:w-[20%] flex flex-col gap-5 h-[410px] relative">
             <img src={blog.image} alt="" />
@@ -43,7 +37,7 @@ const Blog = () => {
             <h3 className="font-medium text-base leading-5">
               {blog.title}
             </h3>
-            <button className="bg-[var(--yellow)]  button w-[150px] absolute bottom-0 left-0"> Read More </button>
+            <button className="bg-[var(--yellow)]  button w-[150px] absolute bottom-0 left-0" onClick={() => handleBlog(blog.id)}> Read More </button>
           </div>
         ))}
       </div>

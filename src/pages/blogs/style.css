@@ -1,0 +1,6 @@
+.blogPage_div {
+  border-radius: 29px;
+  background: rgba(0, 0, 0, 0.64);
+
+  backdrop-filter: blur(5.5px);
+}
