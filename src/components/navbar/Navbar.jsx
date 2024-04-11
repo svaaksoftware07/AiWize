@@ -4,6 +4,7 @@ import Contact from '../../pages/contact/Contact';
 import { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import ProductPopUp from "../productPopUp/ProductPopUp";
+import RequestPage from "../RequestPage/RequestPage";
 
 // Navbar menu data 
 const data = [
@@ -19,6 +20,7 @@ function Navbar() {
     const { pathname } = useLocation()
     const [showPopup, setShowPopup] = useState(false);
     const [showPopup1, setShowPopup1] = useState(false);
+    const [showPopup2, setShowPopup2] = useState(false);
 
     const handleContactClick = () => {
         setShowPopup(true);
@@ -26,6 +28,7 @@ function Navbar() {
     const handleProductClick = () => {
         setShowPopup1(true);
     };
+
 
     // nav toggler function 
     const navClickHandler = () => {
@@ -76,7 +79,7 @@ function Navbar() {
                                 ))}
                             </div>
                            
-                            <div className="hidden sm:ml-6 sm:flex sm:items-center nav-request-button">
+                            <div className="hidden sm:ml-6 sm:flex sm:items-center nav-request-button" onClick={()=>{setShowPopup2(true)}}>
                                 <span>Request A Free Demo</span>
                             </div>
                         </div>
@@ -88,6 +91,7 @@ function Navbar() {
             </nav >
             {showPopup && <Contact setShowPopup={setShowPopup} />}
             {showPopup1 && <ProductPopUp setShowPopup1={setShowPopup1} />}
+            {showPopup2 && <RequestPage setShowPopup2={setShowPopup2} />}
         </>
     );
 }

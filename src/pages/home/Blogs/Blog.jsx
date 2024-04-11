@@ -1,10 +1,7 @@
 import Aos from "aos";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-// import { FaLinkedin } from "react-icons/fa";
-// import { FaFacebook } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
-// import { FaTwitter } from "react-icons/fa";
+
 import blogs from "../../../assets/BlogData.json";
 
 const Blog = () => {
