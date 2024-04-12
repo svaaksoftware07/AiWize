@@ -1,8 +1,6 @@
-import React from 'react'
 import "./style.css"
 import { Helmet } from 'react-helmet'
 import HomeHero from '../../components/heroSection/HomeHero'
-import { Link } from 'react-router-dom'
 import OurProducts from './ourProducts/OurProducts'
 import Blog from './Blogs/Blog'
 import ProductVideo from './ProductVideo/ProductVideo'

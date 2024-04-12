@@ -5,14 +5,14 @@ import { IoColorPaletteSharp } from "react-icons/io5";
 
  const products=[
   {
-    name: "CHANKAYA",
+    name: "CHANAKYA",
     description: "BUSINESS RULE ENGINE",
     tagline:"Mind within Mind",
     leftText1:"Empowering Business for",
     leftText2:"Ease of Use & Efficiency",
     rightText:"Natural Language Processing and Generative AI",
     button:"Watch How It Works",
-    url: "/product/CHANKAYA"
+    url: "/product/CHANAKYA"
   },
   {
     name: "NatFlow",

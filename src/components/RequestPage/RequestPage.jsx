@@ -49,7 +49,7 @@ function RequestPage({setShowPopup2}) {
               </div>
               <input type="text" placeholder="Name of the Organisation" className="text-xs h-8 placeholder-[#3d3c3c]" />
               <select name="" id="" className="text-xs h-8 placeholder-[#3d3c3c]">
-                  <option value="CHANKAYA">CHANKAYA</option>
+                  <option value="CHANAKYA">CHANAKYA</option>
                   <option value="NatFlow">NatFlow</option>
                   <option value="PayYes">PayYes</option>
                   <option value="RADM">RADM</option>

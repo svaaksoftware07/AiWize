@@ -11,7 +11,7 @@ const ProductPopUp = ({ setShowPopup1 }) => {
     {
       name: "CHANAKYA",
       description: "The Generative AI Based Business Rule Engine",
-      url: "/product/CHANKAYA"
+      url: "/product/CHANAKYA"
     },
     {
       name: "NatFlow",

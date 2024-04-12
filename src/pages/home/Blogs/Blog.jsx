@@ -47,7 +47,7 @@ const Blog = () => {
               {blogs[0].title}
             </h3>
             <div className="flex justify-center flex-row items-center py-5">
-            <button className="bg-[var(--yellow)]  button w-[150px] "> Read More </button>
+            <button className="bg-[var(--yellow)]  button w-[150px] " onClick={() => handleBlog(blogs[0].id)}> Read More </button>
             </div>
           </div>
       </div>

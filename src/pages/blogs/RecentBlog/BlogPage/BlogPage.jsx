@@ -2,7 +2,7 @@ import { FaLinkedin, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import Blog from "../../../home/Blogs/Blog";
 import JoinNow from "../../../../components/joinNow/JoinNow";
 import BlogData from "../../../../assets/BlogData.json";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const BlogPage = () => {
   const { id } = useParams();
@@ -91,6 +91,7 @@ const BlogPage = () => {
         </div>
       </div>
       <Blog />
+      <Link to={"/blogs"} className="w-[200px] mx-auto button border-[2px] border-black md:mx-3 mb-10 block md:hidden"> View All </Link>
       <JoinNow />
     </>
   );

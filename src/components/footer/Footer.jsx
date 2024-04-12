@@ -13,7 +13,7 @@ function Footer() {
     {
       title: "Products",
       links: [
-        "CHANKAYA BUSINESS RULE ENGINE",
+        "CHANAKYA BUSINESS RULE ENGINE",
         "NATFLOW INTUITIVE ENTERPRISE",
         "JOURNEY BUILDER",
         "PAY YES ENTERPRISE COLLECTIONS SUITE",

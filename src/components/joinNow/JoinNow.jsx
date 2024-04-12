@@ -1,23 +1,33 @@
-
 function JoinNow() {
-    return (
-        <>
-            <div className="md:h-[450px] bg-[#191919] py-16 ">
-                <div className="flex justify-center items-center h-[100%] px-16 md:px-2">
-                    <div>
-                        <div className='mb-5 text-white'>
-                            <h1 className='text-[24px] text-center md:text-start md:text-[3rem] font-semibold rounded-full'>Ready to get started?</h1>
-                            <p className='text-center text-[14px] md:text-2xl'>To join the <span className='text-[var(--yellow)]'>Aiwize</span> community</p>
-                        </div>
-                        <div className='flex justify-between items-center bg-white rounded-full p-1'>
-                            <input className='md:p-3 px-2  md:px-4 border-none outline-none text-[12px] md:w-[250px] rounded-full' type="text" placeholder='Enter Your Email' />
-                            <span className='w-[6rem] py-3 flex items-center justify-center bg-[var(--yellow)] text-[.89rem] rounded-full mx-1 cursor-pointer text-center'>Join Now</span>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <>
+      <div className="md:h-[380px] bg-[#191919] py-16 ">
+        <div className="flex justify-center items-center h-[100%] px-16 md:px-2">
+          <div>
+            <div className="mb-5 text-white">
+              <h1 className="text-[24px] text-center md:text-start md:text-[2.3rem] font-semibold rounded-full">
+                Ready to get started?
+              </h1>
+              <p className="text-center text-[14px] md:text-base">
+                To join the <span className="text-[var(--yellow)] pr-2">Aiwize</span>
+                community
+              </p>
             </div>
-        </>
-    )
+            <div className="flex justify-between items-center bg-white rounded-full p-1">
+              <input
+                className="md:py-2 px-2 md:px-4 border-none outline-none text-[12px] md:text-[15px] md:w-[250px] rounded-full"
+                type="text"
+                placeholder="Enter Your Email"
+              />
+              <span className="w-[7rem] font-bold py-3 flex items-center justify-center bg-[var(--yellow)] text-[.89rem] md:text-xs rounded-full cursor-pointer text-center">
+                Join Now
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default JoinNow
+export default JoinNow;

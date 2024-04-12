@@ -51,7 +51,7 @@ function HomeHero() {
     }, [index, data.length]);
 
     return (
-        <div className="hero-section-main text-white overflow-x-hidden" >
+        <div className="hero-section-main text-white overflow-hidden" >
             <div className={`bg-[url(/gif/home/heroSection.gif)] bg-cover bg-no-repeat   w-screen h-screen md:h-[700px] xl:h-screen z-[-1]`}>
                 <div className='hero-section-group-one'>
                     <div className='hero-section-tagline'>
