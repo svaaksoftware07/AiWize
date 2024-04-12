@@ -1,0 +1,14 @@
+.product-bg-main{
+    background-image: url("/images/product/pruductHeroBg.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .product-bg-main{
+        background-image: url("/images/product/pruductHeroBg1.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    
+}

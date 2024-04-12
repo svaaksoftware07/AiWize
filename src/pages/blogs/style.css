@@ -4,3 +4,14 @@
 
   backdrop-filter: blur(5.5px);
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .blog-bg-main{
+      background-image: url("/images/blog/BannerHeroVideo1.png");
+      background-size:cover;
+      background-repeat: no-repeat;
+  }
+  
+}

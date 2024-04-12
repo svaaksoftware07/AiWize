@@ -106,7 +106,7 @@
         display: flex;
         justify-content: center !important;
         margin-bottom: 0px;
-        padding: 6rem 0 0;
+        padding: 7rem 0 0;
     }
 
     .hero-section-tagline p {
@@ -137,6 +137,7 @@
         font-size: 16px;
         display: block;
         width: 100%;
+        margin-top: 50px;
         text-align: center;
         
     }
@@ -334,3 +335,4 @@
     }
 
 }
+

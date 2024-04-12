@@ -55,6 +55,8 @@
 
     .nav-request-mobile {
         display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 
     .nav-request-mobile span {

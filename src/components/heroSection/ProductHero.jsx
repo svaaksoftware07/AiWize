@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
+import "./product.css"
 
 function ProductHero({ data }) {
     return (
-
         <div className="hero-section-main text-white overflow-hidden" >
-            <div className={`bg-[url(/images/product/pruductHeroBg.jpeg)] bg-cover bg-no-repeat   w-screen h-auto md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
+            <div className={`product-bg-main w-screen h-screen md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
                 <div className='hero-section-group-one'>
                     <div className='hero-section-tagline mt-5'>
                         <p className='bg-[#262626]'><img src='/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>{data.tagline}</i></p>

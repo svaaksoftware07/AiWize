@@ -16,6 +16,7 @@ const data = [
 ];
 
 function Navbar() {
+    
     // get path name from url 
     const { pathname } = useLocation()
     const [showPopup, setShowPopup] = useState(false);
@@ -36,11 +37,15 @@ function Navbar() {
         element.style.display = element.style.display === "none" ? "flex" : "none"
     }
 
-  
     useEffect(() => {
         const element = document.getElementById("nav-item-mobile")
-        element.style.display ="none"
+        element.style.display = "none"
+        if(window.innerWidth>768){
+            const element = document.getElementById("nav-item-mobile")
+            element.style.display = "none"
+        }
     }, [pathname]);
+
     return (
         <>
             <nav className="nav-main-header pb-5 z-20">
@@ -78,9 +83,12 @@ function Navbar() {
                                             )}
                                     </>
                                 ))}
+                                <div className="sm:ml-6 sm:flex sm:items-center nav-request-mobile" onClick={() => { setShowPopup2(true) }}>
+                                    <span>Request A Free Demo</span>
+                                </div>
                             </div>
-                           
-                            <div className="hidden sm:ml-6 sm:flex sm:items-center nav-request-button" onClick={()=>{setShowPopup2(true)}}>
+
+                            <div className="hidden sm:ml-6 sm:flex sm:items-center nav-request-button" onClick={() => { setShowPopup2(true) }}>
                                 <span>Request A Free Demo</span>
                             </div>
                         </div>

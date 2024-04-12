@@ -4,6 +4,9 @@
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
   background-color: rgba(2, 2, 2, 0.493);
 }
 
