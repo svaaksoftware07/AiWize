@@ -35,17 +35,22 @@ const RecentBlog = () => {
           onClick={backhandler}
         />
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center pt-10 md:pt-0 w-11/12 lg:w-3/4 lg:px-10 lg:pb-10 h-full bg-[var(--yellow)] shadow-lg px-4">
-          <div className="flex flex-col md:flex-row justify-center items-start w-full h-auto">
-            <div className="w-full lg:w-1/2 bg-white text-black py-6 px-2 lg:p-10 flex flex-col text-center h-[350px] md:text-left items-center md:items-start ">
-              <h3 className="text-xl md:text-sm lg:text-2xl font-semibold">
-                {blogData[index]?.title.slice(0, 70)}
-              </h3>
-              <p className="text-xs md:text-xs lg:text-sm my-2"> {blogData[index]?.BlogData[1]?.content.slice(0, 170)} </p>
-              <button className="bg-black text-[var(--yellow)] text-base w-full rounded-full p-4 lg:py-3 my-3"
-                onClick={() => handleNavigate(blogData[index]?.id)} > Read Now</button>
+        <div className="flex flex-col md:flex-row justify-center items-start w-full h-auto">
+          <div className="w-full lg:w-1/2 bg-white text-black py-6 px-2 lg:p-10 flex flex-col text-center h-[350px] md:text-left items-center md:items-start overflow-hidden">
+            <h3 className="text-xl md:text-sm lg:text-2xl font-semibold">
+              {blogData[index]?.title.slice(0, 70)}
+            </h3>
+            <div className="overflow-y-hidden hover:overflow-auto max-h-full">
+              <p className="text-sm xl:text-base my-2">
+                {blogData[index]?.BlogData[1]?.content}
+              </p>
             </div>
-            <img src={blogData[index]?.image} alt="" className="w-full hidden md:block lg:w-1/2 h-[350px]" />
+            <button className="bg-black text-[var(--yellow)] text-base w-full rounded-full p-4 lg:py-3 my-3" onClick={() => handleNavigate(blogData[index]?.id)}>
+              Read Now
+            </button>
           </div>
+          <img src={blogData[index]?.image} alt="" className="w-full hidden md:block lg:w-1/2 h-[350px]" />
+        </div>
           <div className="flex gap-10 pb-4">
             <IoIosArrowRoundBack
               className="text-3xl cursor-pointer border-2 border-white text-white hover:bg-black rounded-full hover:text-[var(--yellow)] hover:border-0 block md:hidden "

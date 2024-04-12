@@ -91,7 +91,7 @@ const BlogPage = () => {
         </div>
       </div>
       <Blog />
-      <Link to={"/blogs"} className="w-[200px] mx-auto button border-[2px] border-black md:mx-3 mb-10 block md:hidden"> View All </Link>
+      <Link to={"/blogs"} className="w-[250px] mx-auto border-[2px] border-black md:mx-3 py-2 my-10 font-semibold rounded-full text-center block md:hidden"> View All </Link>
       <JoinNow />
     </>
   );
