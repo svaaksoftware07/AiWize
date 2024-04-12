@@ -69,7 +69,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px var(--yellow);
     font-size: 92px;
-    font-weight: 900;
+    font-weight:bolder !important;
     line-height: 120%;
     color: #000;
     position: relative;

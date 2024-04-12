@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import "./product.css"
+import { scrolled } from '../../utility/GlobalFunction'
 
 function ProductHero({ data }) {
     return (
@@ -17,7 +18,7 @@ function ProductHero({ data }) {
                                 <p >{data.leftText1}</p>
                                 <p >{data.leftText2}</p>
                             </div>
-                            <div className='hero-section-group-two-inner-one-button'><span className=' w-[100px] md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black'>{data.button}</span></div>
+                            <div className='hero-section-group-two-inner-one-button'><span className=' w-[100px] md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black' onClick={scrolled}>{data.button}</span></div>
                         </div>
 
                         <div className='w-24 md:w-[4%] '>
@@ -37,7 +38,7 @@ function ProductHero({ data }) {
                             </div>
                         </div>
 
-                        <div className='hero-section-group-two-inner-two-button mb-5 '><span className=' m-0 w-fit px-4 md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black'>Explore Now</span></div>
+                        <div className='hero-section-group-two-inner-two-button mb-5 ' ><span className=' m-0 w-fit px-4 md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black' onClick={scrolled}>{data.button}</span></div>
                     </div>
                 </div>
             </div>

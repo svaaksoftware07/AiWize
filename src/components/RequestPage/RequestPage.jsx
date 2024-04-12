@@ -48,13 +48,14 @@ function RequestPage({setShowPopup2}) {
                 />
               </div>
               <input type="text" placeholder="Name of the Organisation" className="text-xs h-8 placeholder-[#3d3c3c]" />
-              <select name="" id="" className="text-xs h-8 placeholder-[#3d3c3c]">
+              <label htmlFor="product" className="text-sm leading-[1px]">Choose a Product</label>
+              <select name="" id="product" className="text-xs h-8 placeholder-[#3d3c3c]">
                   <option value="CHANAKYA">CHANAKYA</option>
                   <option value="NatFlow">NatFlow</option>
                   <option value="PayYes">PayYes</option>
                   <option value="RADM">RADM</option>
                 </select>
-              <label htmlFor="textarea" className="text-sm leading-[1px]">Choose a Product</label>
+              <label htmlFor="textarea" className="text-sm leading-[1px]">Tentative Use Case/Comments</label>
                 <textarea name="" id="textarea" cols="5" rows="5"></textarea>
               <div className="flex gap-1">
                 <input type="checkbox"/>

@@ -1,3 +1,9 @@
+.about-bg-main{
+    background-image: url("/images/about/BannerHeroVideo.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
 /* .about-text-list{
     
 } */
@@ -55,4 +61,11 @@
     .about-count div h3 span {
         font-size: 16px;
     }
+
+    .about-bg-main{
+        background-image: url("/images/about/BannerHeroVideo1.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+   
 }

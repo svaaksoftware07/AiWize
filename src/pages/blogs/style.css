@@ -5,7 +5,10 @@
   backdrop-filter: blur(5.5px);
 }
 
-
+.BlogGradient{
+    
+  background: linear-gradient(0deg, #191919 65%, rgb(255, 255, 255) 65%, rgb(255, 255, 255) 100%);
+}
 
 @media screen and (max-width: 768px) {
   .blog-bg-main{

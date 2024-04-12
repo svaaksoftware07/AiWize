@@ -11,7 +11,7 @@ const BlogPage = () => {
     <>
       <div className="hero-section-main text-white overflow-x-hidden">
         <div
-          className={`bg-cover bg-center bg-no-repeat w-screen h-[90vh] sm:h-screen xl:h-[600px] z-[-1]`}
+          className={`bg-cover bg-center bg-no-repeat w-screen h-screen md:h-[750px] xl:h-screen z-[-1]`}
           style={{ backgroundImage: `url('${blogData.image}')` }}
         >
           <div className="hero-section-group-one h-[600px]">
@@ -91,7 +91,7 @@ const BlogPage = () => {
         </div>
       </div>
       <Blog />
-      <Link to={"/blogs"} className="w-[250px] mx-auto border-[2px] border-black md:mx-3 py-2 my-10 font-semibold rounded-full text-center block md:hidden"> View All </Link>
+      <Link to={"/blogs"} className="w-[300px] h-[60px]  items-center justify-center mx-auto border-[2px] border-black md:mx-3 py-2 mb-10 font-semibold rounded-full text-center flex md:hidden"> View All </Link>
       <JoinNow />
     </>
   );

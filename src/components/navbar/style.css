@@ -111,3 +111,17 @@
         font-size: 14px;
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+.logo{
+        height: 2.5rem;
+    }
+    .nav-item a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .nav-request-button span {
+        font-size: 14px;
+    }
+}

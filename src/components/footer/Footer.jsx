@@ -60,7 +60,7 @@ function Footer() {
       <div className="flex flex-wrap md:justify-start footer2">
         <span className="footer2_span md:pl-10 pr-6 mb-3">
           <h3 className="text-[1.3rem]">CONNECT WITH US </h3>
-          <span className="flex gap-3 text-2xl font-bold m-4 text-white">
+          <span className="flex gap-3 text-2xl font-bold my-4 md:mx-4 text-white">
             <FaFacebookF  className="border p-1 rounded-full cursor-pointer text-3xl"/>
             <FaLinkedinIn className="border p-1 rounded-full cursor-pointer  text-3xl" />
             <ImYoutube className="border p-1 rounded-full cursor-pointer text-3xl" />

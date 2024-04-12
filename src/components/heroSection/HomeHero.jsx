@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./style.css"
-
+import { scrolled } from '../../utility/GlobalFunction'
 
 // data for the causel on home 
 const data = [
@@ -52,7 +52,7 @@ function HomeHero() {
 
     return (
         <div className="hero-section-main text-white overflow-hidden h-max" >
-            <div className={`bg-[url(/gif/home/heroSection.gif)] bg-cover bg-no-repeat   w-screen h-screen md:h-[750px] xl:h-screen z-[-1]`}>
+            <div className={`bg-[url(/gif/home/heroSection.gif)] bg-cover bg-no-repeat w-screen h-screen md:h-[750px] xl:h-screen z-[-1]`}>
                 <div className='hero-section-group-one'>
                     <div className='hero-section-tagline'>
                         <p className='bg-[#262626]'><img src='/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>We Make AI Work Hard</i></p>
@@ -66,7 +66,7 @@ function HomeHero() {
                                 <p >solutions with <span className='text-[var(--yellow)]'>AIWIZE LABS PVT LTD</span></p>
 
                             </div>
-                            <div className='hero-section-group-two-inner-one-button'><span className=' w-[100px] md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black'>Explore Now</span></div>
+                            <div className='hero-section-group-two-inner-one-button'><span className=' w-[100px] md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black' onClick={scrolled}>Explore Now</span></div>
                         </div>
 
                         <div className='w-24 md:w-[4%] '>
@@ -86,7 +86,7 @@ function HomeHero() {
                             </div>
                         </div>
 
-                        <div className='hero-section-group-two-inner-two-button mb-5'><span className=' w-fit px-4 md:w-[350px] bg-[var(--yellow)] button md:h-12  text-black'>Explore Now</span></div>
+                        <div className='hero-section-group-two-inner-two-button mb-5'><span className=' w-fit px-4 md:w-[350px] bg-[var(--yellow)] button md:h-12  text-black' onClick={scrolled}>Explore Now</span></div>
                     </div>
                 </div>
             </div>

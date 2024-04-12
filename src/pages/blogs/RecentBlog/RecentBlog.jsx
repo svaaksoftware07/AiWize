@@ -25,7 +25,7 @@ const RecentBlog = () => {
   }
 
   return (
-    <div className="flex flex-col justify-start mt-10 items-center h-auto pb-20 md:pb-0 md:min-h-screen BlogGradient">
+    <div className="flex flex-col justify-start mt-10 items-center h-auto pb-20 md:pb-0 lg:min-h-[680px] xl:min-h-screen BlogGradient">
       <div className="w-full flex justify-center text-3xl lg:text-5xl font-bold bg-white py-8">
         Our Recent <span className="text-[var(--yellow)] mx-2"> BLOGS</span>
       </div>

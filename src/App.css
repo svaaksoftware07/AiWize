@@ -5,6 +5,10 @@
 
 * {
     font-family: Spartan;
+
+}
+body {
+    scroll-behavior: smooth;
 }
 
 .hero-section-header {
@@ -27,10 +31,7 @@
     cursor: pointer;
 }
 
-.BlogGradient{
-    
-    background: linear-gradient(0deg, #191919 60%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 100%);
-}
+
 @media screen and (max-width: 768px) {
     .mobile-hide{
         display: none;
