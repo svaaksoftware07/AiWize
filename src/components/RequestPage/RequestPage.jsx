@@ -23,10 +23,10 @@ function RequestPage({setShowPopup2}) {
         <div>
           <div className="contact-background">
 
-          <div className="contactUs_modal_container">
+          <div className="contactUs_modal_container lg:mt-5">
             <IoReturnUpBack onClick={handleGoBack} className="bg-[#FFDA14] rounded-full text-4xl p-2 font-bold md:mx-[12rem] cursor-pointer" />
-            <h3 className="text-center font-semibold text-2xl py-2">Get in touch</h3>
-            <p className="text-center text-lg pb-6 text-[#667085]">
+            <h3 className="text-center font-semibold text-xl lg:text-2xl py-2">Get in touch</h3>
+            <p className="text-center text-base lg:text-lg pb-3 lg:pb-6 text-[#667085]">
               We’d love to hear from you. Please fill out this form.
             </p>
             <form action="" className="flex flex-col gap-4 px-5 md:w-96 lg:w-1/2 mx-auto">
@@ -54,10 +54,11 @@ function RequestPage({setShowPopup2}) {
                   <option value="PayYes">PayYes</option>
                   <option value="RADM">RADM</option>
                 </select>
-                <textarea name="" id="" cols="5" rows="5"></textarea>
-              <div className="flex gap-3 text-xs">
+              <label htmlFor="textarea" className="text-sm leading-[1px]">Choose a Product</label>
+                <textarea name="" id="textarea" cols="5" rows="5"></textarea>
+              <div className="flex gap-1">
                 <input type="checkbox"/>
-                <p>You agree to our friendly Privacy Policy.</p>
+                <p className="text-[12px]">You agree to our friendly Privacy Policy.</p>
               </div>
               <button type="submit" onClick={handleGoBack}>Submit</button>
             </form>

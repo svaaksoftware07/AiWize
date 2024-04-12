@@ -12,7 +12,7 @@ function Blogs() {
       </Helmet>
       <div className="hero-section-main text-white overflow-x-hidden">
         <div
-          className={`bg-[url(/images/blog/BannerHeroVideo.png)]  bg-auto bg-no-repeat w-screen h-[500px] md:h-[500px] sm:h-screen lg:h-[100vh] z-[-1]`}
+          className={`bg-[url(/images/blog/BannerHeroVideo.png)]  bg-auto bg-no-repeat w-screen h-screen md:h-[500px] sm:h-screen lg:h-screen z-[-1]`}
         >
           <div className="hero-section-group-one">
             <div className="">

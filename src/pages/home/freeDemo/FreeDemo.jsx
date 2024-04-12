@@ -1,7 +1,11 @@
-import { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Aos from "aos";
+import RequestPage from '../../../components/RequestPage/RequestPage';
+
 function FreeDemo() {
+    
+    const [showPopup2, setShowPopup2] = useState(false);
     useEffect(() => {
         Aos.init({
             disable: 'mobile',
@@ -10,6 +14,7 @@ function FreeDemo() {
     }, [])
     return (
         <>
+            {showPopup2 && <RequestPage setShowPopup2={setShowPopup2} />}
             {/* Try our free demos  */}
             <div className="flex justify-center items-end px-3 pt-10 flex-col md:px-16 md:h-[700px] xl:h-screen bg-[#fffbe5]">
                 <div
@@ -26,11 +31,11 @@ function FreeDemo() {
                         </div>
 
                         <div className="flex flex-col justify-center items-center mb-3 w-100 md:flex-row md:justify-start mt-5">
-                            <Link className='w-[200px] md:w-[200px]  bg-[var(--yellow)] button mb-3'
-                                to={"#"}>Ask For Free Demo</Link>
+                            <p onClick={()=>setShowPopup2(true)} className='w-[200px] md:w-[200px]  bg-[var(--yellow)] button mb-3'
+                            >Ask For Free Demo</p>
 
                             <a className='w-[200px] button border-[2px] border-black md:mx-3 mb-3'
-                                to={"our-product"}>Explore All Products</a>
+                                href={"our-product"}>Explore All Products</a>
                         </div>
                     </div>
                     <div className=" hidden md:block w-screen md:p-5 md:pb-0 md:w-[45%]">

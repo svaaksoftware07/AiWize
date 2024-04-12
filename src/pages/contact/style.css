@@ -23,13 +23,13 @@
 }
 
 .contact-background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #d9d8d4d8;
-
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: #d9d8d4d8 !important;
+  z-index: 100;
 }
 
 @media screen and (max-width: 768px) {
@@ -38,17 +38,17 @@
   }
 
   .contactUs_modal_container {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform:none;
     width: 100%;
-    max-width: 53rem;
+    /* max-width: 53rem; */
+    height: 100vh;
     padding: 2rem;
     z-index: 999;
-    padding-top: 5rem;
+    padding-top: 1.2rem;
     padding-bottom: 8rem;
-    background-color: #ffffff;
+    background-color: white;
   }
-
 }

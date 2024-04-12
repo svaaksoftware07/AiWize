@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
+import RequestPage from "../RequestPage/RequestPage";
 
 const AskQuestion = () => {
   const questions = [
@@ -38,12 +39,17 @@ const AskQuestion = () => {
       setExpandedIndex(index);
     }
   };
+  const [showPopup2, setShowPopup2] = useState(false);
+
 
   return (
-    <div className="flex flex-col items-center justify-center bg-[#FFFCED] gap-10 py-5">
-      <div className="text-center">
-        <h3 className="text-[1.2rem] md:text-[1.8rem] font-semibold">FREQUENTLY ASKED QUESTIONS</h3>
-        <p className="text-[12px] md:text-[17px]">
+    <>
+    {showPopup2 && <RequestPage setShowPopup2={setShowPopup2} />}
+
+      <div className="flex flex-col items-center justify-center bg-[#FFFCED] gap-10 py-5">
+      <div className="text-center px-4">
+        <h3 className="text-[1.2rem] md:text-[1.8rem] font-semibold my-3">FREQUENTLY ASKED QUESTIONS</h3>
+        <p className="text-[14px] md:text-[17px] ">
           Everything you need to know about the product and billing.
         </p>
       </div>
@@ -56,12 +62,12 @@ const AskQuestion = () => {
               className="text-[16px] font-[400] text-[#595566] "
             >
               <div className="flex justify-between border-black">
-                <h3>{q.question}</h3>
+                <h3 className="text-[18px] text-[#262626]">{q.question}</h3>
                 {expandedIndex === index ? <CiCircleMinus /> : <CiCirclePlus />}
               </div>
             </div>
             {expandedIndex === index && (
-              <p className="text-[15px] py-1">{q.answer}</p>
+              <p className="text-[14px] py-1 text-[#667085]">{q.answer}</p>
             )}
           </div>
         ))}
@@ -72,11 +78,13 @@ const AskQuestion = () => {
           {`Can’t`} find the answer {`you’re`} looking for? Please chat to our friendly
           team.
         </p>
-        <button className="text-[#FFDA14] text-[14px] border-[1px] rounded-full px-4 py-1 border-[#FFDA14]">
+        <button onClick={()=>setShowPopup2(true)} className="text-[#FFDA14] text-[14px] border-[1px] rounded-full px-4 py-1 border-[#FFDA14]">
           Get in touch
         </button>
       </div>
     </div>
+    </>
+
   );
 };
 

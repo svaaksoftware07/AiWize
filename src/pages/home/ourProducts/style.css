@@ -109,7 +109,7 @@ display: none;
         display: block;
     }
     .OurProduct {
-        padding: 2rem .2rem;
+        padding: 2rem 1rem;
         background-color: #191919;
         color: white;
     }
@@ -134,14 +134,14 @@ display: none;
         gap: .25rem;
     }
 
-    .our-product-main_mobile{
+    /* .our-product-main_mobile{
         width: 100%;
         display: flex;
         justify-content: center ;     
-    }
+    } */
 
     .OurProduct_div{
-        height: 600px;
+        height: 530px;
         width: 100%;
         cursor: pointer;
         display: flex;
@@ -151,8 +151,8 @@ display: none;
     }
 
    
-    .OurProduct_divdiv h3 {
-        font-size: 30px;
+    .OurProduct_div div h3 {
+        font-size: 28px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -161,8 +161,8 @@ display: none;
 
     }
 
-    .OurProduct_divdiv p {
-        font-size: 20px;
+    .OurProduct_div div p {
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -170,7 +170,7 @@ display: none;
         padding: 0px 8px;
     }
 
-    .OurProduct_divdiv .OurProduct_arrow {
+    .OurProduct_div div .OurProduct_arrow {
         position: absolute;
         width: 30px;
         height: 30px;
@@ -178,29 +178,32 @@ display: none;
 
     }
 
-    .odd_div_product {
+
+    .OurProduct_div:nth-child(even) {
+        width: 100% !important;
         color: white;
-        width: 300px;
+        background-image: url("/images/home/prouductSectionRectangle2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    
+    }
+    .OurProduct_div:nth-child(odd) {
+        width: 100% !important;
+        color: white;
         background-image: url("/images/home/prouductSectionRectangle1.png");
-        background-size:contain;
-        background-repeat:no-repeat;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    
     }
-
-    .odd_div_product h3 {
-        color: #000;
-    }
-
-    .odd_div_product p {
-        color: #262626;
-    }
-
     .OurProduct_div:nth-child(odd) .OurProduct_arrow {
-        bottom:100px;
+        bottom:101px;
         right: 25px;
         color: #000000;
     }
     .OurProduct_div:nth-child(even) .OurProduct_arrow {
-        bottom: 143px;
+        bottom: 131px;
         right: 20px;
         color: #FFDA14;
     }

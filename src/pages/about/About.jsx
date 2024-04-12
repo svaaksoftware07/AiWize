@@ -7,6 +7,7 @@ import { FaFacebook, FaGlobeAmericas, FaInstagram } from 'react-icons/fa'
 import { PiChartBar } from 'react-icons/pi'
 import { FaXTwitter } from 'react-icons/fa6'
 import Aos from "aos";
+import { Link } from 'react-router-dom'
 const data = [
   {
     icon: <IoLayersOutline className='text-[1.6rem] text-white' />,
@@ -66,7 +67,7 @@ function About() {
 
       {/* hero section start  */}
       <div  className="text-white overflow-x-hidden">
-      <div className={`bg-[url(/images/about/BannerHeroVideo.png)] bg-auto bg-no-repeat w-screen h-[500px] md:h-[500px] sm:h-screen lg:h-screen z-[-1]`}>
+      <div className={`bg-[url(/images/about/BannerHeroVideo.png)] bg-auto bg-no-repeat w-screen h-screen md:h-[500px] sm:h-screen lg:h-screen z-[-1]`}>
           <div className='hero-section-group-one'>
             <div className="">
               <p className='text-3xl text-center'>Our Story</p>
@@ -142,7 +143,7 @@ function About() {
               <div className="flex justify-between items-start capitalize">
                 <h3 className='text-[2rem] text-center lg:text-start lg:text-[3rem] mb-3'>Our core <span className='text-[var(--yellow)]'>values</span> & <span className='text-[var(--yellow)]'>principles</span>.</h3>
                 <p className='hidden lg:flex justify-cente items-center'>
-                  <span className='px-3 py-2 text-center bg-black text-[var(--yellow)] text-[13px] font-bold cursor-pointer rounded-full normal-case'>Get in tuch</span>
+                  <span className='px-3 py-2 text-center bg-black text-[var(--yellow)] text-[13px] font-bold cursor-pointer rounded-full normal-case'>Get in touch</span>
                 </p>
               </div>
               <p className='w-100 lg:w-[75%] text-center lg:text-start'>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor sit amet consectetur adipisicing elit. Esse vero eligendi facilis quis autem sit! Consectetur.</p>
@@ -162,8 +163,8 @@ function About() {
                     )
                   })
                 }
-                <p className='lg:hidden flex justify-center my-5'>
-                  <span className='px-3 py-2 text-center bg-black text-[var(--yellow)] text-[14px] font-bold cursor-pointer rounded-full normal-case'>Get in tuch</span>
+                <p className='lg:hidden flex justify-center my-5 overflow-x-hidden'>
+                  <span className='px-3 py-2 text-center bg-black text-[var(--yellow)] text-[14px] font-bold cursor-pointer rounded-full normal-case button'>Get in touch</span>
                 </p>
               </div>
 
@@ -250,7 +251,7 @@ function About() {
               <h3 className='text-white text-[24px] text-center lg:text-start  lg:text-[40px] uppercase lg:leading-[46px] mb-3'>Better Consult, <span className='text-[var(--yellow)]'>Better</span> Results</h3>
               <p className='text-white text-[12px] lg:text-[14px] text-center lg:text-start lg:leading-6 mb-3'>Lorem ipsum dolor sit amet consectetur. Amet in sed accumsan amet dolor velit. A amet sit diam sed. Lacinia est vivamus egestas quis semper. Facilisi et molestie nunc tristique tellus eget.</p>
               <div className='flex justify-center lg:justify-start pb-10'>
-                <button className='rounded-full bg-[var(--yellow)] text-[14px] py-2 px-5 flex items-center justify-center'><IoCallOutline /> +800 1234 654 </button>
+                <Link to={"tel:800 1234 654"} className='rounded-full bg-[var(--yellow)] text-[16px] py-2 px-5 flex items-center justify-center w-[280px] h-[60px]'><IoCallOutline /> +800 1234 654 </Link>
               </div>
             </div>
           </div>

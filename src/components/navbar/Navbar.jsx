@@ -38,7 +38,8 @@ function Navbar() {
 
   
     useEffect(() => {
-       
+        const element = document.getElementById("nav-item-mobile")
+        element.style.display ="none"
     }, [pathname]);
     return (
         <>
@@ -84,7 +85,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className='block md:hidden bg-[var(--yellow)] py-1 px-3 rounded-full'>
-                            <BiMenuAltRight className='text-2xl text-black ' onClick={navClickHandler} />
+                            <BiMenuAltRight className='text-3xl text-black ' onClick={navClickHandler} />
                         </div>
                     </div>
                 </div >
