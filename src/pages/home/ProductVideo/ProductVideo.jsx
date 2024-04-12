@@ -37,16 +37,16 @@ const ProductVideo = () => {
           <div key={index} className="w-1/4 flex flex-col gap-5 text-start">
             <img src={video.image} alt="" className="rounded-xl" />
             <h3 className="font-medium text-lg leading-5">{video.description}</h3>
-            <button className="underline text-left text-base">Read Now</button>
+            {/* <button className="underline text-left text-base">Read Now</button> */}
           </div>
         ))}
       </div>
       <div className="flex justify-center px-3 md:hidden">
         <div className="w-screen flex flex-col text-start px-3">
           <img src={videos[0].image} alt="" className="rounded-xl mb-3" />
-          <h3 className="font-medium text-lg leading-5 mb-3">{videos[0].description}</h3>
-          <div className="flex justify-between md:hidden mb-5">
-            <button className="underline text-left text-base">Read Now</button>
+          <h3 className="font-medium text-center lg:text-start text-lg leading-5 mb-3">{videos[0].description}</h3>
+          <div className="flex justify-center md:hidden mb-5">
+            {/* <button className="underline text-left text-base">Read Now</button> */}
             <button className="bg-[#FFDA14] button w-[150px] d">
               Watch All Videos
             </button>

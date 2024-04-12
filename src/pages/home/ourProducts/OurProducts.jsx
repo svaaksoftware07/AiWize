@@ -36,13 +36,13 @@ const OurProducts = () => {
 
   const navigate=useNavigate()
   return (
-    <div className="OurProduct h-auto over">
+    <div className="OurProduct h-auto over" id="our-product">
       <h1 className="text-center heading_1 pb-6 w-100">
         Our <span>Products</span> & <span>Services</span>
       </h1>
       <div className="our-product-main">
         {products.map((product, index) => (
-          <div key={index} className="OurProduct_div mobile-hide" data-aos="zoom-in-up" onClick={()=>navigate(product.url)}>
+          <div key={index} className="OurProduct_div mobile-hid" data-aos="zoom-in-up" onClick={()=>navigate(product.url)}>
             <div>
               <h3 >{product.name}<sup>{product?.span2}</sup></h3>
               <p>{product.description}<sup>{product?.span2}</sup>{product?.description2}</p>
@@ -52,7 +52,7 @@ const OurProducts = () => {
         ))}
       </div>
 
-      <div className="our-product-main_mobile over-product-hide hidden">
+      {/* <div className="our-product-main_mobile over-product-hide hidden">
         <div className={`OurProduct_div_mobile ${result ? "even_div_product" : "odd_div_product"}`}>
           <div  onClick={()=>navigate(products[index].url)}>
             <h3>{products[index].name}<sup>{products[index]?.span2}</sup></h3>
@@ -66,7 +66,7 @@ const OurProducts = () => {
               <MdNavigateNext />
             </div>
         </div>
-      </div>
+      </div> */}
     </div>
 
   );

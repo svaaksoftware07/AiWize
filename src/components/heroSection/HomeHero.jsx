@@ -86,7 +86,7 @@ function HomeHero() {
                             </div>
                         </div>
 
-                        <div className='hero-section-group-two-inner-two-button'><span className=' w-fit px-4 md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black'>Explore Now</span></div>
+                        <div className='hero-section-group-two-inner-two-button'><span className=' w-fit px-4 md:w-[350px] bg-[var(--yellow)] button md:h-12  text-black'>Explore Now</span></div>
                     </div>
                 </div>
             </div>

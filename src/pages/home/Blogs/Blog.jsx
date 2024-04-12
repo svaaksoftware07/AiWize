@@ -23,7 +23,7 @@ const Blog = () => {
      >
       <div>
         <h1 className="text-center heading_1 pb-6">
-          All Blogs
+          Explore All Blogs
         </h1>
       </div>
       <div className="hidden md:flex justify-center flex-wrap gap-10 " >
@@ -39,14 +39,14 @@ const Blog = () => {
         ))}
       </div>
 
-      <div className="flex md:hidden justify-center flex-wrap gap-10 p-4 ">
+      <div className="flex md:hidden justify-center flex-wrap gap-10 p-4 pb-16 ">
           <div className="w-screen  flex flex-col gap-5 h-[410px] relative">
             <img src={blogs[0].image} alt="" />
             <span className="text-gray-500 text-xs py-1 border-b-[1px] border-gray-500 text-center">{blogs[0].date}</span>
-            <h3 className="font-medium text-lg leading-5 text-center">
+            <h3 className="font-medium text-xl leading-5 text-center">
               {blogs[0].title}
             </h3>
-            <div className="flex justify-center flex-row items-center ">
+            <div className="flex justify-center flex-row items-center py-5">
             <button className="bg-[var(--yellow)]  button w-[150px] "> Read More </button>
             </div>
           </div>

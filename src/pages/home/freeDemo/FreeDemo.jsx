@@ -29,8 +29,8 @@ function FreeDemo() {
                             <Link className='w-[200px] md:w-[200px]  bg-[var(--yellow)] button mb-3'
                                 to={"#"}>Ask For Free Demo</Link>
 
-                            <Link className='w-[200px] button border-[2px] border-black md:mx-3 mb-3'
-                                to={"#"}>Explore All Products</Link>
+                            <a className='w-[200px] button border-[2px] border-black md:mx-3 mb-3'
+                                to={"our-product"}>Explore All Products</a>
                         </div>
                     </div>
                     <div className=" hidden md:block w-screen md:p-5 md:pb-0 md:w-[45%]">

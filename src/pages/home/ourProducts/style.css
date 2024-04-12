@@ -15,6 +15,7 @@ display: none;
 }
 .our-product-main{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 1.25rem;
 }
@@ -112,9 +113,25 @@ display: none;
         background-color: #191919;
         color: white;
     }
+    /* .OurProduct_div{
+        height: 600px;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    } */
 
     .OurProduct span {
         color: #FFDA14;
+    }
+
+    .our-product-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: .25rem;
     }
 
     .our-product-main_mobile{
@@ -123,8 +140,8 @@ display: none;
         justify-content: center ;     
     }
 
-    .OurProduct_div_mobile {
-        height: 500px;
+    .OurProduct_div{
+        height: 600px;
         width: 100%;
         cursor: pointer;
         display: flex;
@@ -134,7 +151,7 @@ display: none;
     }
 
    
-    .OurProduct_div_mobile div h3 {
+    .OurProduct_divdiv h3 {
         font-size: 30px;
         font-style: normal;
         font-weight: 600;
@@ -144,7 +161,7 @@ display: none;
 
     }
 
-    .OurProduct_div_mobile div p {
+    .OurProduct_divdiv p {
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
@@ -153,7 +170,7 @@ display: none;
         padding: 0px 8px;
     }
 
-    .OurProduct_div_mobile div .OurProduct_arrow {
+    .OurProduct_divdiv .OurProduct_arrow {
         position: absolute;
         width: 30px;
         height: 30px;
@@ -177,10 +194,15 @@ display: none;
         color: #262626;
     }
 
-    .odd_div_product .OurProduct_arrow {
-        bottom: 115px;
-        right: 15px;
+    .OurProduct_div:nth-child(odd) .OurProduct_arrow {
+        bottom:100px;
+        right: 25px;
         color: #000000;
+    }
+    .OurProduct_div:nth-child(even) .OurProduct_arrow {
+        bottom: 143px;
+        right: 20px;
+        color: #FFDA14;
     }
 
     .even_div_product {
@@ -227,6 +249,8 @@ display: none;
         position: absolute;
         right: -37px;
     }
+
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 991px){

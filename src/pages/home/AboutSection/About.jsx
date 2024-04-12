@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import Aos from "aos";
+import { useNavigate } from "react-router-dom";
 function About() {
-
+ const navigate = useNavigate()
     useEffect(() => {
         Aos.init({
             disable: 'mobile',
@@ -27,7 +28,7 @@ function About() {
                                 All our efforts are to take all technical complexities behind the scenes, so that users have to deal only with English like configurations</p>
                         </div>
                         <div className="flex justify-center mb-3">
-                            <button className='w-[250px] h-10 bg-[var(--yellow)] button'>About Us</button>
+                            <button onClick={()=>navigate("/about")} className='w-[250px] h-10 bg-[var(--yellow)] button'>About Us</button>
                         </div>
                     </div>
                 </div>
