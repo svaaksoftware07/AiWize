@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import { IoReturnUpBack } from "react-icons/io5";
 import "./style.css";
-import {useNavigate} from "react-router-dom"
+import {useLocation, useNavigate} from "react-router-dom"
+import { useEffect } from "react";
 const ProductPopUp = ({ setShowPopup1 }) => {
   const handleGoBack = () => {
     setShowPopup1(false);
@@ -38,6 +39,8 @@ const ProductPopUp = ({ setShowPopup1 }) => {
     handleGoBack()
     navigate(url)
   }
+
+ 
   return (
     <>
       <style>

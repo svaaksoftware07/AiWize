@@ -66,20 +66,25 @@
 .hero-section-heading {
     background-size: 200% 200%;
     background-clip: text;
+    color: var(--yellow);
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px var(--yellow);
+    -webkit-text-stroke-width: 2px ;
     font-size: 92px;
-    font-weight:bolder !important;
     line-height: 120%;
-    color: #000;
     position: relative;
     transition: all .3s ease;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.hero-section-heading span{
+    font-family: sans-serif;
+
 }
 
 .hero-section-text {
     font-size: 2.5rem;
     text-align: start;
-    
 }
 
 .hero-section-text p {
@@ -161,8 +166,8 @@
     }
 
     .hero-section-heading {
-        font-size: 35px;
-        font-weight: 500;
+        font-size: 50px;
+        font-weight: 800;
         -webkit-text-stroke: 1px var(--yellow);
         padding: 5px 10px;
         text-align: center;

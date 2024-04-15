@@ -59,12 +59,12 @@ function Navbar() {
                                 {data.map((item, index) => (
                                     <>
                                         {item.name === "Contact Us" ? (
-                                            <button onClick={handleContactClick} key={index} className={`text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.path ? "active" : null}`}>{item.name}</button>
+                                            <button onClick={handleContactClick} key={index} className={`w-100 text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.path ? "active" : null}`}>{item.name}</button>
                                         ) : item.name === "Products" ? (
-                                            <button onClick={handleProductClick} key={index} className={`text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.name ? "active" : null}`}>{item.name}{item?.arrow && <span className="hidden md:block"><img src="gif/home/downArrow.gif" alt="" className='absolute top-2 left-0' /></span>}</button>
+                                            <button onClick={handleProductClick} key={index} className={`w-100 text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.name ? "active" : null}`}>{item.name}{item?.arrow && <span className="hidden md:block"><img src="gif/home/downArrow.gif" alt="" className='absolute top-2 left-0' /></span>}</button>
                                         ) :
                                             (
-                                                <Link to={item.path} key={index} className={`text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.path ? "active" : null}`}>{item.name}{item?.arrow && <span className="hidden md:block"><img src="assets/gif/home/downArrow.gif" alt="" className='absolute top-2 left-0' /></span>}</Link>
+                                                <Link to={item.path} key={index} className={`w-100 text-gray-300 hover:text-white mx-3 px-3 py-2 rounded-md text-lg font-medium relative ${pathname === item.path ? "active" : null}`}>{item.name}{item?.arrow && <span className="hidden md:block"><img src="assets/gif/home/downArrow.gif" alt="" className='absolute top-2 left-0' /></span>}</Link>
                                             )}
                                     </>
                                 ))}

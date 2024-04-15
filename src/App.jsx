@@ -4,8 +4,10 @@ import NavData from "./router/router"
 import "./App.css"
 import Footer from './components/footer/Footer';
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import 'aos/dist/aos.css'; 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const { pathname } = useLocation();
@@ -21,6 +23,7 @@ function App() {
         )}
       </Routes>
       <Footer/>
+      <ToastContainer/>
     </>
   )
 }

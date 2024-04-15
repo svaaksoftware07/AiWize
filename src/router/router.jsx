@@ -1,10 +1,12 @@
+import React from "react";
+
 import NotFound from "../components/error/NotFound";
 import About from "../pages/about/About";
-import Blogs from "../pages/blogs/Blogs";
+import Blogs from "../pages/blogs/Blogs" ;
 import BlogPage from "../pages/blogs/RecentBlog/BlogPage/BlogPage";
 import Contact from "../pages/contact/Contact";
-import Home from "../pages/home/Home";
-import Products from "../pages/products/Products";
+import  Home from "../pages/home/Home" ;
+import  Products from "../pages/products/Products" ;
 
 
 const data=[

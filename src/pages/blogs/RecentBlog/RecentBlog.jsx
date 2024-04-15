@@ -45,7 +45,7 @@ const RecentBlog = () => {
                 {blogData[index]?.BlogData[1]?.content}
               </p>
             </div>
-            <button className="bg-black text-[var(--yellow)] text-base w-full rounded-full p-4 lg:py-3 my-3" onClick={() => handleNavigate(blogData[index]?.id)}>
+            <button className="bg-black text-[var(--yellow)] text-base w-full md:w-[250px] rounded-full p-4 lg:py-3 my-3" onClick={() => handleNavigate(blogData[index]?.id)}>
               Read Now
             </button>
           </div>

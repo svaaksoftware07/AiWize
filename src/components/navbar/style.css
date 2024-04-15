@@ -21,9 +21,12 @@
     font-weight: 700;
 }
 
+#nav-item a{
+    padding: 8px 25px;
+}
 .active {
     border-radius: 82px;
-    padding: 8px 25px;
+    /* padding: 8px 25px; */
     text-align: center;
     background: rgba(0, 0, 0, 0.32);
 }
@@ -100,16 +103,22 @@
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
     .logo{
-        height: 2.5rem;
+        height: 2rem;
     }
     .nav-item a {
-        margin: 5px;
-        font-size: 14px;
+        margin: 3px;
+        font-size: 12px;
+    }
+
+    .nav-item button {
+        margin: 3px;
+        font-size: 10px;
     }
 
     .nav-request-button span {
-        font-size: 14px;
+        font-size: 12px;
     }
+   
 }
 
 @media screen and (min-width: 992px) and (max-width: 1024px) {

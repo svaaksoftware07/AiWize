@@ -3,33 +3,41 @@ import { BsTwitterX } from "react-icons/bs";
 import { ImYoutube } from "react-icons/im";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const sections = [
     {
       title: "Platforms",
-      links: ["Platforms", "CRMNext", "CustomerNext", "dataNext", "gptNext"],
+      links: [
+        {name:"Platform-1",url:"#"},
+        {name:"Platform-2",url:"#"},
+        {name:"Platform-3",url:"#"},
+        {name:"Platform-4",url:"#"},
+        {name:"Platform-5",url:"#"},
+      ],
     },
     {
       title: "Products",
       links: [
-        "CHANAKYA BUSINESS RULE ENGINE",
-        "NATFLOW INTUITIVE ENTERPRISE",
-        "JOURNEY BUILDER",
-        "PAY YES ENTERPRISE COLLECTIONS SUITE",
-        "RADMAX AUTONOMOUS",
-        "RAPID APPLICATION DEVELOPMENT SUITE",
+        {name:"CHANAKYA BUSINESS RULE ENGINE",url:"/product/CHANAKYA"},
+        {name:"NATFLOW INTUITIVE ENTERPRISE",url:"/product/NatFlow"},
+        {name:"JOURNEY BUILDER",url:"#"},
+        {name:"PAYYES ENTERPRISE COLLECTIONS SUITE",url:"/product/PayYes"},
+        {name:"RADMX AUTONOMOUS",url:"/product/RADM"},
+        {name:"RAPID APPLICATION DEVELOPMENT SUITE",url:"#"},
       ],
     },
     {
       title: "About Us",
       links: [
-        "Partners",
-        "Media centre",
-        "Careers",
-        "Privacy",
-        "responsible",
-        "disclosure policy",
+        {name:"Partners",url:"#"},
+        {name:"Media centre",url:"#"},
+        {name:"Careers",url:"#"},
+        {name:"Privacy",url:"#"},
+        {name:"responsible",url:"#"},
+        {name:"disclosure policy",url:"#"},
+
       ],
     },
     {
@@ -52,7 +60,7 @@ function Footer() {
           <div key={index} className="flex flex-col gap-3 uppercase">
             <h3 className="text-[1.3rem]">{section.title}</h3>
             {section.links.map((link, i) => (
-              <p className="text-[.89rem] cursor-pointer hover:text-red" key={i}>{link}</p>
+              <Link to={link?.url} className="text-[.89rem] cursor-pointer hover:text-red" key={i}>{link?.name}</Link>
             ))}
           </div>
         ))}
@@ -67,25 +75,25 @@ function Footer() {
             <BsTwitterX className="border p-1 rounded-full cursor-pointer text-3xl" />
           </span>
         </span>
-        <div className="footer-bottom-text p-[35px] border-b-2 md:border-b-0  md:border-l-2 border-[#FFDA14] ">
+        <div className="footer-bottom-text p-[35px] border-b-2 md:border-b-0  md:border-l-2 border-[var(--yellow)] ">
           <h4> Asia HQ </h4>
           <p>1108 Mahagun Maple</p>
           <p>F-26, Sector 50, Noida, UP- 201 301</p>
           <p>PH: +91 9818258199</p>
         </div>
-        <div className="footer-bottom-text p-[35px] md:border-l-2 md:border-[#FFDA14]">
+        <div className="footer-bottom-text p-[35px] md:border-l-2 md:border-[var(--yellow)]">
           <h4> USA HQ </h4>
           <p>702 Oberlin Road, Suite 200 Raleigh,</p>
           <p>NC 27605</p>
           <p>PH: +1 415 424 4644, 833-CRM-NEXT</p>
           <p>(Toll Free)</p>
         </div>
-        {/* <div className="footer-bottom-text p-[35px] md:border-l-2 md:border-[#FFDA14]">
+        {/* <div className="footer-bottom-text p-[35px] md:border-l-2 md:border-[var(--yellow)]">
           <h4> Canada HQ </h4>
           <p>222 Bay St, Suite 3000; Toronto,</p>
           <p>Ontario, Canada, M5K 1E7</p>
         </div>
-        <div className="footer-bottom-text p-[35px] md:border-l-2 md:border-[#FFDA14]">
+        <div className="footer-bottom-text p-[35px] md:border-l-2 md:border-[var(--yellow)]">
           <h4> MEA HQ </h4>
           <p>Dubai Internet City G66,</p>
           <p>PH: +97 14 430 9318</p>

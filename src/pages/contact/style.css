@@ -16,7 +16,8 @@
 .contactUs_modal_container select,
 .contactUs_modal_container textarea,
 .contactUs_modal_container button {
-  background-color: #ffda14;
+  background-color: black;
+  color: var(--yellow);
   border-radius: 5px;
   padding: 0.5rem;
   font-size: 0.875rem;
@@ -28,7 +29,7 @@
   left: 0;
   width: 100vw !important;
   height: 100vh !important;
-  background-color: #d9d8d4d8 !important;
+  background-color: rgba(2, 2, 2, 0.493) !important;
   z-index: 100;
 }
 

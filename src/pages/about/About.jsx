@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, {useState, useEffect } from 'react'
 import "./style.css"
 import { Helmet } from 'react-helmet'
 import { IoIosCheckmarkCircleOutline } from 'react-icons/io'
@@ -8,6 +8,7 @@ import { PiChartBar } from 'react-icons/pi'
 import { FaXTwitter } from 'react-icons/fa6'
 import Aos from "aos";
 import { Link } from 'react-router-dom'
+import RequestPage from '../../components/RequestPage/RequestPage'
 const data = [
   {
     icon: <IoLayersOutline className='text-[1.6rem] text-white' />,
@@ -52,6 +53,7 @@ const teamData = [
   }
 ]
 function About() {
+  const [showPopup2, setShowPopup2] = useState(false);
   // for animation 
   useEffect(() => {
     Aos.init({
@@ -143,7 +145,7 @@ function About() {
               <div className="flex justify-between items-start capitalize">
                 <h3 className='text-[2rem] text-center lg:text-start lg:text-[3rem] mb-3'>Our core <span className='text-[var(--yellow)]'>values</span> & <span className='text-[var(--yellow)]'>principles</span>.</h3>
                 <p className='hidden lg:flex justify-cente items-center'>
-                  <span className='px-3 py-2 text-center bg-black text-[var(--yellow)] text-[13px] font-bold cursor-pointer rounded-full normal-case'>Get in touch</span>
+                  <span className='px-3 py-2 text-center bg-black text-[var(--yellow)] text-[13px] font-bold cursor-pointer rounded-full normal-case' onClick={()=>setShowPopup2(true)}>Get in touch</span>
                 </p>
               </div>
               <p className='w-100 lg:w-[75%] text-center lg:text-start'>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor sit amet consectetur adipisicing elit. Esse vero eligendi facilis quis autem sit! Consectetur.</p>
@@ -164,7 +166,7 @@ function About() {
                   })
                 }
                 <p className='lg:hidden flex justify-center my-5 overflow-x-hidden'>
-                  <span className='px-3 py-2 text-center bg-black text-[var(--yellow)] text-[14px] font-bold cursor-pointer rounded-full normal-case button'>Get in touch</span>
+                  <span className='px-3 py-2 text-center bg-black text-[var(--yellow)] text-[14px] font-bold cursor-pointer rounded-full normal-case button' onClick={()=>setShowPopup2(true)}>Get in touch</span>
                 </p>
               </div>
 
@@ -264,6 +266,7 @@ function About() {
       </div>
       {/* call end */}
 
+      {showPopup2 && <RequestPage setShowPopup2={setShowPopup2} />}
     </>
   )
 }

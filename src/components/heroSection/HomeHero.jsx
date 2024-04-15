@@ -13,7 +13,7 @@ const data = [
         description3: "imized"
     },
     {
-        heading: "NatFLow",
+        heading: "NatFlow",
         description1: "Intuitive enterprise",
         description2: "Journey Builder"
     },

@@ -1,12 +1,28 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./product.css"
 import { scrolled } from '../../utility/GlobalFunction'
 
 function ProductHero({ data }) {
+    // const [imageSrc, setImageSrc] = useState(null);
+
+    // useEffect(() => {
+    //   const imageLoader = new Image();
+    //   imageLoader.src = data?.image;
+   
+    //   imageLoader.onload = () => {
+    //     setImageSrc(src);
+    //   };
+   
+    //   return () => {
+    //     // Clean up function to prevent memory leaks
+    //     imageLoader.onload = null;
+    //   };
+    // }, [data]);
+    // bg-[url(${data.image|| placeholder})]
     return (
         <div className="hero-section-main text-white overflow-hidden" >
-            <div className={`product-bg-main w-screen h-screen md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
+            <div className={`  product-bg-main w-screen h-screen md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
                 <div className='hero-section-group-one'>
                     <div className='hero-section-tagline mt-5'>
                         <p className='bg-[#262626]'><img src='/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>{data.tagline}</i></p>
@@ -37,7 +53,6 @@ function ProductHero({ data }) {
                                 </div>
                             </div>
                         </div>
-
                         <div className='hero-section-group-two-inner-two-button mb-5 ' ><span className=' m-0 w-fit px-4 md:w-[200px] bg-[var(--yellow)] button md:h-12  text-black' onClick={scrolled}>{data.button}</span></div>
                     </div>
                 </div>
