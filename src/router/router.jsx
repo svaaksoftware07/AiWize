@@ -1,4 +1,3 @@
-import React from "react";
 
 import NotFound from "../components/error/NotFound";
 import About from "../pages/about/About";

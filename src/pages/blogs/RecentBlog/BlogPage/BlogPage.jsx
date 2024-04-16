@@ -2,9 +2,15 @@ import { FaLinkedin, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import Blog from "../../../home/Blogs/Blog";
 import JoinNow from "../../../../components/joinNow/JoinNow";
 import BlogData from "../../../../assets/BlogData.json";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 const BlogPage = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 700);
+  }, [pathname]);
+
   const { id } = useParams();
   const blogData = BlogData.find((blog) => blog.id == id);
   return (
@@ -98,3 +104,13 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+
+
+
+
+// if we want to add ceo detail then paste the code in json
+// {
+//   "type": "ceo",
+//   "name": "Rajneesh Chadha",
+//   "title": "CEO, Aiwize Labs PVT LTD"
+// }
