@@ -1,28 +1,28 @@
 /* eslint-disable react/prop-types */
 import "./product.css";
 import { scrolled } from "../../utility/GlobalFunction";
+import { useEffect, useState } from "react";
 
 function ProductHero({ data }) {
-//   const [imageSrc, setImageSrc] = useState(null);
+  const [imageSrc, setImageSrc] = useState(null);
 
-//   useEffect(() => {
-//     const imageLoader = new Image();
-//     imageLoader.src = data?.image;
-
-//     imageLoader.onload = () => {
-//       setImageSrc(data?.image);
-//     };
-
-//     return () => {
-//       // Clean up function to prevent memory leaks
-//       imageLoader.onload = null;
-//     };
-//   }, [data]);
+  useEffect(() => {
+    const imageLoader = new Image();
+    imageLoader.src = data?.bannerImage;
+    imageLoader.onload = () => {
+      setImageSrc(data?.bannerImage);
+    };
+    return () => {
+      // Clean up function to prevent memory leaks
+      imageLoader.onload = null;
+    };
+  }, [data]);
   
+// alert(imageSrc)
   return (
     <div className="hero-section-main text-white overflow-hidden">
-      <div
-        className={`bg-[url(${data?.bannerImage})] w-screen h-screen md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
+      <div key={imageSrc} style={{backgroundImage:`url(${imageSrc})`}}
+        className={`w-screen h-screen bg-no-repeat bg-cover md:h-auto sm:h-screen xl:h-screen z-[-1]`}>
         <div className="hero-section-group-one">
           <div className="hero-section-tagline mt-5">
             <p className="bg-[#262626]">

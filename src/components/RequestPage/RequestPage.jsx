@@ -11,6 +11,8 @@ function RequestPage({ setShowPopup2 }) {
     setShowPopup2(false);
   };
 
+  const [loading, setLoading] = useState(false)
+
   const [emailData, setEmailData] = useState({
     from_name: '',
     to_name: 'AiWize',
@@ -18,21 +20,25 @@ function RequestPage({ setShowPopup2 }) {
     mobile_no: "",
     email_id: "",
     country_code: "",
-    product_name:"",
-    message:""
+    product_name: "",
+    message: ""
   });
 
   // send email 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("emailData", emailData);
-    emailjs.send('service_b099v8g', 'template_7crzld8', emailData, '-8fIFV9ixVaXypDE5')
-      .then((response) => {
-        toast.success('Email sent successfully!');
-        handleGoBack()
-      }, (error) => {
-        console.error('Error sending email:', error);
-      });
+    handleGoBack()
+    // setLoading(true);
+    // console.log("emailData", emailData);
+    // emailjs.send('service_b099v8g', 'template_7crzld8', emailData, '-8fIFV9ixVaXypDE5')
+    //   .then((response) => {
+    //     toast.success('Email sent successfully!');
+    //     handleGoBack()
+    //   }, (error) => {
+    //     console.error('Error sending email:', error);
+    //   }).finally(()=>{
+    //     setLoading(false)
+    //   })
   };
 
   const handleChange = (e) => {
@@ -97,15 +103,15 @@ function RequestPage({ setShowPopup2 }) {
                   />
 
                 </div>
-                <input 
-                type="text" 
-                name="organization_name"
-                onChange={handleChange}
-                placeholder="Name of the Organisation" 
-                className="text-xs h-8 placeholder-[var(--yellow)]" 
+                <input
+                  type="text"
+                  name="organization_name"
+                  onChange={handleChange}
+                  placeholder="Name of the Organisation"
+                  className="text-xs h-8 placeholder-[var(--yellow)]"
                 />
-                <label name="product_name" htmlFor="product" className="text-sm leading-[1px]">Choose a Product</label>
-                <select onChange={handleChange} name="" id="product" className="text-xs h-8 placeholder-[var(--yellow)] text-[var(--yellow)]">
+                <label htmlFor="product" className="text-sm leading-[1px]">Choose a Product</label>
+                <select onChange={handleChange} name="product_name" id="product" className="text-xs h-8 placeholder-[var(--yellow)] text-[var(--yellow)]">
                   <option value="CHANAKYA">CHANAKYA</option>
                   <option value="NatFlow">NatFlow</option>
                   <option value="PayYes">PayYes</option>
@@ -113,17 +119,19 @@ function RequestPage({ setShowPopup2 }) {
                 </select>
 
                 <label htmlFor="textarea" className="text-sm leading-[1px]">Tentative Use Case/Comments</label>
-                <textarea 
-                name="message"
-                onChange={handleChange} 
-                id="textarea" 
-                cols="5" 
-                rows="5"></textarea>
+                <textarea
+                  name="message"
+                  onChange={handleChange}
+                  id="textarea"
+                  cols="5"
+                  rows="5"></textarea>
                 <div className="flex gap-1">
                   <input type="checkbox" />
                   <p className="text-[12px]">You agree to our friendly Privacy Policy.</p>
                 </div>
-                <button type="submit">Submit</button>
+                {
+                  
+                    <button type="submit" disabled={loading}>Submit</button>}
               </form>
             </div>
           </div>

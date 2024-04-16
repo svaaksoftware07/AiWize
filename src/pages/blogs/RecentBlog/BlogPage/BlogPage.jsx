@@ -1,8 +1,9 @@
-import { FaLinkedin, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import Blog from "../../../home/Blogs/Blog";
 import JoinNow from "../../../../components/joinNow/JoinNow";
 import BlogData from "../../../../assets/BlogData.json";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link,useLocation, useParams } from "react-router-dom";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { useEffect } from "react";
 
 const BlogPage = () => {
@@ -85,8 +86,8 @@ const BlogPage = () => {
                     <h3 className="text-2xl font-bold">{item.name}</h3>
                     <h5 className="text-xs font-semibold">{item.title}</h5>
                     <div className="flex text-[var(--yellow)] gap-4">
-                      <FaLinkedin /> <FaFacebook /> <FaInstagram />{" "}
-                      <FaTwitter />
+                      <FaLinkedin  className="cursor-pointer text-2xl"/> <FaFacebook  className="cursor-pointer text-2xl"/> <FaInstagram  className="cursor-pointer text-2xl"/>
+                      <FaSquareXTwitter className="cursor-pointer text-xl"/>
                     </div>
                   </div>
                 );

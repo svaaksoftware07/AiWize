@@ -91,7 +91,7 @@ function About() {
               <p className='text-center lg:text-start mb-3'>
                 <span className='pt-2 pb-1 px-3 bg-[var(--yellow)] rounded-full text-[12px] font-bold'>OUR VISION</span>
               </p>
-              <h3 className='text-[2rem] text-center lg:text-start lg:text-[3rem] mb-3'>Turn Your <span className='text-[var(--yellow)]'>Ideas</span> Into <span className='text-[var(--yellow)]'>Reality</span>.</h3>
+              <h3 className='text-[2rem] text-center lg:text-start lg:text-[3rem] mb-3'>Turn Your <span className='text-[var(--yellow)]'>Ideas</span> Into <span className='text-[var(--yellow)]'>Reality</span></h3>
               <ul className='about-text-list'>
                 <li>
                   <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor sit amet consectetur adipisicing elit. Esse vero eligendi facilis quis autem sit! Consectetur.</p>
@@ -143,7 +143,7 @@ function About() {
                 <span className='pt-2 pb-1 px-3 bg-[var(--yellow)] rounded-full text-[12px] font-bold'>Growing with our Clients</span>
               </p>
               <div className="flex justify-between items-start capitalize">
-                <h3 className='text-[2rem] text-center lg:text-start lg:text-[3rem] mb-3'>Our core <span className='text-[var(--yellow)]'>values</span> & <span className='text-[var(--yellow)]'>principles</span>.</h3>
+                <h3 className='text-[2rem] text-center lg:text-start lg:text-[3rem] mb-3'>Our core <span className='text-[var(--yellow)]'>values</span> & <span className='text-[var(--yellow)]'>principles</span></h3>
                 <p className='hidden lg:flex justify-cente items-center'>
                   <span className='px-3 py-2 text-center bg-black text-[var(--yellow)] text-[13px] font-bold cursor-pointer rounded-full normal-case' onClick={()=>setShowPopup2(true)}>Get in touch</span>
                 </p>

@@ -10,22 +10,23 @@ function Footer() {
     {
       title: "Platforms",
       links: [
-        {name:"Platform-1",url:"#"},
-        {name:"Platform-2",url:"#"},
-        {name:"Platform-3",url:"#"},
-        {name:"Platform-4",url:"#"},
-        {name:"Platform-5",url:"#"},
-      ],
-    },
-    {
-      title: "Products",
-      links: [
         {name:"CHANAKYA BUSINESS RULE ENGINE",url:"/product/CHANAKYA"},
         {name:"NATFLOW INTUITIVE ENTERPRISE",url:"/product/NatFlow"},
         {name:"JOURNEY BUILDER",url:"#"},
         {name:"PAYYES ENTERPRISE COLLECTIONS SUITE",url:"/product/PayYes"},
         {name:"RADMX AUTONOMOUS",url:"/product/RADM"},
         {name:"RAPID APPLICATION DEVELOPMENT SUITE",url:"#"},
+      ],
+    },
+    {
+      title: "Industries",
+      links: [
+        {name:"",url:"#"},
+        {name:"",url:"#"},
+        {name:"",url:"#"},
+        {name:"",url:"#"},
+        {name:"",url:"#"},
+        {name:"",url:"#"},
       ],
     },
     {
@@ -83,10 +84,10 @@ function Footer() {
         </div>
         <div className="footer-bottom-text p-[35px] md:border-l-2 md:border-[var(--yellow)]">
           <h4> USA HQ </h4>
-          <p>702 Oberlin Road, Suite 200 Raleigh,</p>
+          {/* <p>702 Oberlin Road, Suite 200 Raleigh,</p>
           <p>NC 27605</p>
           <p>PH: +1 415 424 4644, 833-CRM-NEXT</p>
-          <p>(Toll Free)</p>
+          <p>(Toll Free)</p> */}
         </div>
         {/* <div className="footer-bottom-text p-[35px] md:border-l-2 md:border-[var(--yellow)]">
           <h4> Canada HQ </h4>

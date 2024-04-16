@@ -2,9 +2,7 @@
 import "./style.css";
 import { Helmet } from "react-helmet";
 import { IoReturnUpBack } from "react-icons/io5";
-import emailjs from 'emailjs-com';
-import { useRef, useState } from "react";
-import { toast } from 'react-toastify';
+import {  useState } from "react";
 
 function Contact({ setShowPopup }) {
   const handleGoBack = () => {
@@ -22,14 +20,8 @@ function Contact({ setShowPopup }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("emailData", emailData);
-    emailjs.send('service_b099v8g', 'template_l6313t7', emailData, '-8fIFV9ixVaXypDE5')
-      .then((response) => {
-        toast.success('Email sent successfully!');
-        handleGoBack()
-      }, (error) => {
-        console.error('Error sending email:', error);
-      });
+    handleGoBack()
+    // window.location.href =`https://aiwizelabs.com/sendContact?name=${emailData.from_name}&mobile=${emailData.mobile_no}&email=${emailData.email_id}&organizationName=${emailData.organization_name}`
   };
 
   const handleChange = (e) => {

@@ -11,7 +11,7 @@ function ProductItem({data}) {
           <h2 className='mb-3 text-[24px] md:text-[28px] lg:text-[32px] leading-8 md:leading-[50px] lg:leading-[65px] font-bold'>{data?.heading}</h2>
           <p className='text-[14px] leading-[20px] md:leading-[25px] mb-3'>{data?.text}</p>
         </div>
-        <div className='w-100 md:w-[40%] p-6'>
+        <div className='w-100 md:w-[40%] p-6 md:p-10'>
           <img src="/images/product/productImage.png" alt="" />
         </div>
         </div>
