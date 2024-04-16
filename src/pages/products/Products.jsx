@@ -9,6 +9,7 @@ import ProductItem from "./ProductItem";
 function Products() {
     const {name}= useParams()
    const data= products.find((item)=>item.name===name)
+   const productVideoContent = data.productVideoContent;
     return (
         <>
             <Helmet>
@@ -17,7 +18,7 @@ function Products() {
             <ProductHero data={data}/>
             {/* <ProductPageAbout features={data}/> */}
             <ProductItem data={data}/>
-            <ProductPageVideo />
+            <ProductPageVideo productVideoContent={productVideoContent}/>
             <AskQuestion />
         </>
     )

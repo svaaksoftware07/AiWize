@@ -1,18 +1,20 @@
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 /* Note: The below rule may not work on the latest versions of Firefox */
+/* 
 html {
     scrollbar-width: none;
-}
+} */
 
 /* Hide scrollbar for Firefox */
 /* Note: This rule may not work on the latest versions of Firefox */
-html {
+
+/* html {
     overflow: -moz-scrollbars-none;
-}
+} */
 
 
 :root {

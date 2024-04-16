@@ -1,15 +1,9 @@
+/* eslint-disable react/prop-types */
 import { GiStarShuriken } from "react-icons/gi";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import "./style.css";
 import { useState } from "react";
-const ProductPageVideo = () => {
-  const listItems = [
-    "No need of technical knowledge, business should be doing business",
-    "What You See Is What You Get (WYSIWYG) concept for rules, policies and scorecards",
-    "Simulations on Production data giving a major tool to visit the past, see trends and shape future",
-    "Testing bulk data to envisage even before rules hit production",
-    "Scalability to nth degree",
-  ];
+const ProductPageVideo = ({productVideoContent}) => {
 
   const [ImageData, setImageData] = useState([
     {
@@ -55,11 +49,11 @@ const ProductPageVideo = () => {
             What’s in it for the User -
           </h5>
           <h3 className="text-[7vw] md:text-[2.8vw] leading-[3rem] font-medium">
-            THE CORE MISSION BEHIND ALL OUR WORK-{" "}
+            THE CORE MISSION BEHIND ALL OUR WORK-
           </h3>
         </div>
         <ul>
-          {listItems.map((item, index) => (
+          {productVideoContent?.map((item, index) => (
             <li key={index} className="flex gap-5 text-[16px] py-2">
               <GiStarShuriken className="mt-1 text-[#FFDA14]" /> {item}
             </li>
