@@ -24,7 +24,7 @@
 }
 
 .OurProduct_div {
-    height: 500px;
+    height: 550px;
     width: calc(100%/4);
     cursor: pointer;
     display: flex;
@@ -67,7 +67,7 @@
 .OurProduct_div:nth-child(odd) {
     color: white;
     background-image: url("/images/home/prouductSectionRectangle1.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -81,7 +81,7 @@
 }
 
 .OurProduct_div:nth-child(odd) .OurProduct_arrow {
-    bottom: 92px;
+    bottom: 98px;
     right: 15px;
     color: #000000;
 }
@@ -89,7 +89,7 @@
 .OurProduct_div:nth-child(even) {
     color: white;
     background-image: url("/images/home/prouductSectionRectangle2.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -103,8 +103,8 @@
 }
 
 .OurProduct_div:nth-child(even) .OurProduct_arrow {
-    bottom: 124px;
-    right: 25px;
+    bottom: 118px;
+    right: 15px;
     color: #FFDA14;
 }
 
