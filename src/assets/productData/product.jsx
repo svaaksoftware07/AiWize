@@ -7,6 +7,7 @@ const products = [
   {
     name: "CHANAKYA",
     bannerImage: "/images/product/pruductHeroBg1.png",
+    bannerImage2: "/images/product/pruductHeroBg11.png",
     description: "BUSINESS RULE ENGINE",
     tagline: "Mind within Mind",
     image: "/images/successIcon.png",
@@ -41,6 +42,7 @@ const products = [
   {
     name: "NatFlow",
     bannerImage: "/images/product/pruductHeroBg2.png",
+    bannerImage2: "/images/product/pruductHeroBg22.png",
     description: "INTUITIVE ENTERPRISE JOURNEY BUILDER",
     tagline: "Do More For Less",
     text: "NatFlow is a platform that has capability to create complex workflows based on available components. It also has a full suite of ready journeys, be it lending or logistic onboarding or hospital onboarding or expense management or any other kind of journeys.",
@@ -68,6 +70,7 @@ const products = [
   {
     name: "PayYes",
     bannerImage: "/images/product/pruductHeroBg3.png",
+    bannerImage2: "/images/product/pruductHeroBg33.png",
     description: "ENTERPRISE COLLECTIONS SUITE",
     tagline: "Collect More, and Now",
     leftText1: "Empowering Business for Ease of Use & Efficiency",
@@ -102,6 +105,7 @@ const products = [
     name: "RADM",
     span: "x",
     bannerImage: "/images/product/pruductHeroBg4.png",
+    bannerImage2: "/images/product/pruductHeroBg44.png",
     description: "RAPID DEVELOPMENT MA",
     heading: (
       <h1>

@@ -5,18 +5,22 @@ import { useEffect, useState } from "react";
 
 function ProductHero({ data }) {
   const [imageSrc, setImageSrc] = useState(null);
-
+  const deviceSize = window.screen.width;
+  
   useEffect(() => {
     const imageLoader = new Image();
     imageLoader.src = data?.bannerImage;
     imageLoader.onload = () => {
-      setImageSrc(data?.bannerImage);
+      if (deviceSize < 768) {
+        setImageSrc(data?.bannerImage2);
+      } else {
+        setImageSrc(data?.bannerImage);
+      }
     };
     return () => {
-      // Clean up function to prevent memory leaks
       imageLoader.onload = null;
     };
-  }, [data]);
+  }, [data, deviceSize]);
   
 // alert(imageSrc)
   return (
