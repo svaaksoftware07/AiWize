@@ -1,17 +1,14 @@
 /* eslint-disable react/prop-types */
 import { Helmet } from "react-helmet";
 import { IoReturnUpBack } from "react-icons/io5";
-import emailjs from 'emailjs-com';
 import { useState } from "react";
-import { toast } from 'react-toastify';
+
 
 function RequestPage({ setShowPopup2 }) {
 
   const handleGoBack = () => {
     setShowPopup2(false);
   };
-
-  const [loading, setLoading] = useState(false)
 
   const [emailData, setEmailData] = useState({
     from_name: '',
@@ -27,18 +24,8 @@ function RequestPage({ setShowPopup2 }) {
   // send email 
   const handleSubmit = (e) => {
     e.preventDefault();
+    window.location.href = `${import.meta.env.VITE_URL}/request-demo.php?name=${emailData.from_name}&mobile=${emailData.country_code}${emailData.mobile_no}&email=${emailData.email_id}&organizationName=${emailData.organization_name}&productName=${emailData.product_name}&comments=${emailData.message}&key=${import.meta.env.VITE_KEY}`
     handleGoBack()
-    // setLoading(true);
-    // console.log("emailData", emailData);
-    // emailjs.send('service_b099v8g', 'template_7crzld8', emailData, '-8fIFV9ixVaXypDE5')
-    //   .then((response) => {
-    //     toast.success('Email sent successfully!');
-    //     handleGoBack()
-    //   }, (error) => {
-    //     console.error('Error sending email:', error);
-    //   }).finally(()=>{
-    //     setLoading(false)
-    //   })
   };
 
   const handleChange = (e) => {
@@ -71,6 +58,8 @@ function RequestPage({ setShowPopup2 }) {
               <form onSubmit={handleSubmit} className="flex flex-col gap-4 px-5 md:w-96 lg:w-1/2 mx-auto">
                 <input
                   type="text"
+                  required
+                  autoComplete="off"
                   placeholder="First Name"
                   name="from_name"
                   className="text-xs h-8 placeholder-[var(--yellow)]"
@@ -79,23 +68,27 @@ function RequestPage({ setShowPopup2 }) {
 
                 <input
                   type="email"
+                  required
+                  autoComplete="off"
                   name="email_id"
                   placeholder="you@company.com"
                   className="text-xs h-8 placeholder-[var(--yellow)]"
                   onChange={handleChange}
                 />
                 <div className="bg-black rounded ">
-                  <select onChange={handleChange} name="country_code" id="" className="text-xs h-8 placeholder-[var(--yellow)] text-[var(--yellow)]">
-                    <option value="USA">US</option>
-                    <option value="IND">IND</option>
-                    <option value="CHN">CHN</option>
-                    <option value="FRA">FRA</option>
-                    <option value="RUS">RUS</option>
-                    <option value="SAU">SAU</option>
+                  <select required onChange={handleChange} name="country_code" id="" className="text-xs h-8 placeholder-[var(--yellow)] text-[var(--yellow)]">
+                    <option value="+1">US</option>
+                    <option value="+91">IND</option>
+                    <option value="+86">CHN</option>
+                    <option value="+33">FRA</option>
+                    <option value="+7">RUS</option>
+                    <option value="+966">SAU</option>
                   </select>
 
                   <input
                     type="tel"
+                    required
+                    autoComplete="off"
                     name="mobile_no"
                     placeholder="+91 1234567890"
                     onChange={handleChange}
@@ -105,13 +98,16 @@ function RequestPage({ setShowPopup2 }) {
                 </div>
                 <input
                   type="text"
+                  required
+                  autoComplete="off"
                   name="organization_name"
                   onChange={handleChange}
                   placeholder="Name of the Organisation"
                   className="text-xs h-8 placeholder-[var(--yellow)]"
                 />
                 <label htmlFor="product" className="text-sm leading-[1px]">Choose a Product</label>
-                <select onChange={handleChange} name="product_name" id="product" className="text-xs h-8 placeholder-[var(--yellow)] text-[var(--yellow)]">
+                <select required onChange={handleChange} name="product_name" id="product" className="text-xs h-8 placeholder-[var(--yellow)] text-[var(--yellow)]">
+                  <option value="">Select</option>
                   <option value="CHANAKYA">CHANAKYA</option>
                   <option value="NatFlow">NatFlow</option>
                   <option value="PayYes">PayYes</option>
@@ -121,17 +117,18 @@ function RequestPage({ setShowPopup2 }) {
                 <label htmlFor="textarea" className="text-sm leading-[1px]">Tentative Use Case/Comments</label>
                 <textarea
                   name="message"
+                  autoComplete="off"
+                  required
                   onChange={handleChange}
                   id="textarea"
                   cols="5"
                   rows="5"></textarea>
                 <div className="flex gap-1">
-                  <input type="checkbox" />
+                  <input type="checkbox"
+                    required />
                   <p className="text-[12px]">You agree to our friendly Privacy Policy.</p>
                 </div>
-                {
-                  
-                    <button type="submit" disabled={loading}>Submit</button>}
+                <button type="submit" >Submit</button>
               </form>
             </div>
           </div>

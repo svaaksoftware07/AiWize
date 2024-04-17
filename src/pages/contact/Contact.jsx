@@ -20,8 +20,8 @@ function Contact({ setShowPopup }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    window.location.href =`${import.meta.env.VITE_URL}/contact.php?name=${emailData.from_name}&mobile=${emailData.country_code}${emailData.mobile_no}&email=${emailData.email_id}&organizationName=${emailData.organization_name}&key=${import.meta.env.VITE_KEY}`
     handleGoBack()
-    // window.location.href =`https://aiwizelabs.com/sendContact?name=${emailData.from_name}&mobile=${emailData.mobile_no}&email=${emailData.email_id}&organizationName=${emailData.organization_name}`
   };
 
   const handleChange = (e) => {
@@ -58,6 +58,8 @@ function Contact({ setShowPopup }) {
               <form onSubmit={ handleSubmit } className="flex flex-col gap-4 px-5 md:w-96 lg:w-1/2 mx-auto">
                 <input
                   type="text"
+                  autoComplete="off"
+                  required
                   onChange={handleChange}
                   name="from_name"
                   placeholder="First Name"
@@ -66,6 +68,7 @@ function Contact({ setShowPopup }) {
 
                 <input
                   type="email"
+                  required
                   name="email_id"
                   onChange={handleChange}
                   placeholder="you@company.com"
@@ -73,16 +76,17 @@ function Contact({ setShowPopup }) {
                 />
 
                 <div className="bg-black text-[var(--yellow)] rounded ">
-                  <select onChange={handleChange} name="country_code" id="" className="text-xs h-8 placeholder-[var(--yellow)]">
-                    <option value="USA">US</option>
-                    <option value="IND">IND</option>
-                    <option value="CHN">CHN</option>
-                    <option value="FRA">FRA</option>
-                    <option value="RUS">RUS</option>
-                    <option value="SAU">SAU</option>
+                  <select onChange={handleChange} required name="country_code" id="" className="text-xs h-8 placeholder-[var(--yellow)]">
+                    <option value="+1">US</option>
+                    <option value="+91">IND</option>
+                    <option value="+86">CHN</option>
+                    <option value="+33">FRA</option>
+                    <option value="+7">RUS</option>
+                    <option value="+966">SAU</option>
                   </select>
                   <input
                     type="tel"
+                    required
                     onChange={handleChange}
                     name="mobile_no"
                     placeholder="+91 1234567890"
@@ -92,6 +96,8 @@ function Contact({ setShowPopup }) {
 
                 <input
                   type="text"
+                  autoComplete="off"
+                  required
                   name="organization_name"
                   onChange={handleChange}
                   placeholder="Name of the Organisation"
@@ -99,7 +105,9 @@ function Contact({ setShowPopup }) {
                 />
 
                 <div className="flex gap-3 text-xs">
-                  <input type="checkbox" />
+                  <input type="checkbox"
+                  required
+                   />
                   <p>You agree to our friendly Privacy Policy.</p>
                 </div>
                 <button type="submit" >Submit</button>
