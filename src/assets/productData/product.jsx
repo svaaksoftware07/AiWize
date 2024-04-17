@@ -17,7 +17,7 @@ const products = [
     button: "Watch How It Works",
     heading: (
       <h1>
-        Empowering Business for Ease of Use &{" "}
+        Empowering Business for Ease of Use &
         <span className="text-[var(--yellow)]">Efficiency</span>
       </h1>
     ),
@@ -73,12 +73,12 @@ const products = [
     bannerImage2: "/images/product/pruductHeroBg33.png",
     description: "ENTERPRISE COLLECTIONS SUITE",
     tagline: "Collect More, and Now",
-    leftText1: "Empowering Business for Ease of Use & Efficiency",
+    leftText1: "Universe of Features in Collection Space, high on No-Code",
     rightText: "Enterprise Collections Suite",
     button: "Explore Now",
     heading: (
       <h1>
-        Universe of Features in Collection Space, high on{" "}
+        Universe of Features in Collection Space, high on
         <span className="text-[var(--yellow)]">No-Code</span>
       </h1>
     ),
