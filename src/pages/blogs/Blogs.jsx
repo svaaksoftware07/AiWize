@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Blog from "../home/Blogs/Blog";
 import JoinNow from "../../components/joinNow/JoinNow";
 import RecentBlog from "./RecentBlog/RecentBlog";
+import AllBlogs from "./allBlogs/AllBlogs";
 
 function Blogs() {
   return (
@@ -28,7 +29,7 @@ function Blogs() {
         </div>
       </div>
       <RecentBlog />
-      <Blog />
+      <AllBlogs/>
       <JoinNow />
     </>
   );

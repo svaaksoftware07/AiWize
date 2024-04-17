@@ -9,7 +9,6 @@
 .hero-section-group-one {
     display: grid;
     background-color: #0000009b;
-    background-color: #0000009b;
     place-content: center;
     height: 100%;
 }
@@ -101,8 +100,7 @@
 
     .hero-section-group-one {
         display: grid;
-        background-color: #0000009b;
-        background-color: #0000009b;
+        background-color: #0000005e;
         place-content: center;
         height: 100%;
     }

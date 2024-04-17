@@ -51,7 +51,7 @@ const RecentBlog = () => {
           </div>
           <img src={blogData[index]?.image} alt="" className="w-full hidden md:block lg:w-1/2 h-[350px]" />
         </div>
-          <div className="flex gap-10 pb-4">
+          <div className="flex gap-10 py-4">
             <IoIosArrowRoundBack
               className="text-3xl cursor-pointer border-2 border-white text-white hover:bg-black rounded-full hover:text-[var(--yellow)] hover:border-0 block md:hidden "
               onClick={backhandler}
