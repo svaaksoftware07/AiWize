@@ -27,7 +27,7 @@ const Blog = () => {
   return (
     <div
       data-aos="fade-right"
-      className="flex flex-col py-10 bg-white md:h-[700px] xl:h-screen"
+      className="flex flex-col py-10 bg-white mb-6"
     >
       <div>
         <h1 className="text-center heading_1 pb-6">Explore All Blogs</h1>
@@ -40,7 +40,7 @@ const Blog = () => {
             <h3 className="font-medium text-base leading-5">
               {blog.title}
             </h3>
-            <button className="bg-[var(--yellow)]  button w-[150px] absolute bottom-0 left-0" onClick={() => handleBlog(blog.id)}> Read More </button>
+            <button className="bg-[var(--yellow)] py-2 px-3 rounded-full absolute bottom-0 left-0" onClick={() => handleBlog(blog.id)}> Read More </button>
           </div>
         ))}
       </div>
@@ -51,11 +51,11 @@ const Blog = () => {
             <>
               <img src={blogs[indexValue].image} alt="" />
               <span className="text-gray-500 text-xs py-1 border-b-[1px] border-gray-500 text-center">{blogs[indexValue].date}</span>
-              <h3 className="font-medium text-xl leading-5 text-center">
+              <h3 className="font-medium text-xl leading-7 text-center">
                 {blogs[indexValue].title}
               </h3>
               <div className="flex justify-center flex-row items-center py-5">
-                <button className="bg-[var(--yellow)]  button w-[150px] " onClick={() => handleBlog(blogs[indexValue].id)}> Read More </button>
+                <button className="bg-[var(--yellow)]  button w-[150px]" onClick={() => handleBlog(blogs[indexValue].id)}> Read More </button>
               </div>
             </>
           )}

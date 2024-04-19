@@ -67,14 +67,14 @@ function About() {
         <title>About - AIWIZE LABS</title>
       </Helmet>
 
-      {/* hero section start  */}
+      {/* product-hero section start  */}
       <div  className="text-white overflow-x-hidden">
       <div className={`about-bg-main w-screen h-screen md:h-[750px] xl:h-screen z-[-1]`}>
-          <div className='hero-section-group-one'>
+          <div className='product-hero-section-group-one'>
             <div className="">
               <p className='text-3xl text-center'>Our Story</p>
               <div className='flex items-center justify-center'>
-                <h3 className='hero-section-heading text-center'>ABOUT US</h3>
+                <h3 className='product-hero-section-heading text-center'>ABOUT US</h3>
                 <img src="/gif/about/hero.gif" className='w-[60px] lg:w-[150px]' alt="" />
               </div>
             </div>
@@ -253,7 +253,7 @@ function About() {
               <h3 className='text-white text-[24px] text-center lg:text-start  lg:text-[40px] uppercase lg:leading-[46px] mb-3'>Better Consult, <span className='text-[var(--yellow)]'>Better</span> Results</h3>
               <p className='text-white text-[12px] lg:text-[14px] text-center lg:text-start lg:leading-6 mb-3'>Lorem ipsum dolor sit amet consectetur. Amet in sed accumsan amet dolor velit. A amet sit diam sed. Lacinia est vivamus egestas quis semper. Facilisi et molestie nunc tristique tellus eget.</p>
               <div className='flex justify-center lg:justify-start pb-10'>
-                <Link to={"tel:800 1234 654"} className='rounded-full bg-[var(--yellow)] text-[16px] py-2 px-5 flex items-center justify-center w-[280px] h-[60px]'><IoCallOutline /> +800 1234 654 </Link>
+                <Link to={"tel:9818258199"} className='rounded-full bg-[var(--yellow)] text-[16px] py-2 px-5 flex items-center justify-center w-[280px] h-[60px]'><IoCallOutline /> +91 9818258199 </Link>
               </div>
             </div>
           </div>

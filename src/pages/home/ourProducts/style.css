@@ -109,7 +109,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .crusel-hidden {
         display: block;
     }
@@ -119,16 +119,6 @@
         background-color: #191919;
         color: white;
     }
-
-    /* .OurProduct_div{
-        height: 600px;
-        width: 100%;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    } */
 
     .OurProduct span {
         color: #FFDA14;
@@ -154,7 +144,7 @@
     }
 
     .OurProduct_div {
-        height: 300px;
+        height: 310px;
     }
 
     .OurProduct_div div h3 {
@@ -268,7 +258,7 @@
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 991px) {
+@media screen and (min-width: 601px) and (max-width: 991px) {
     .OurProduct_div div h3 {
         font-size: 28px;
     }

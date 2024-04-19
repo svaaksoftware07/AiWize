@@ -23,7 +23,7 @@ function Home() {
             messageAlert(thisIsEmailConfirmation)
             navigate("/")
         }
-        
+
         // Add the google analaytics service
         ReactGA.initialize('G-HNQ1Z77L46'); // Your GA tracking ID
         ReactGA.pageview(window.location.pathname + window.location.search);
@@ -34,7 +34,7 @@ function Home() {
             <Helmet>
                 <title>Home - AIWIZE LABS</title>
             </Helmet>
-            <div className="home-main m-0 p-0 overflow-x-hidden" >
+            <div className="home-main m-0 p-0 overflow-x-hidden " >
                 <HomeHero />
                 <OurProducts />
                 <FreeDemo />

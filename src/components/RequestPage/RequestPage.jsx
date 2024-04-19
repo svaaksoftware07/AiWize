@@ -50,7 +50,7 @@ function RequestPage({ setShowPopup2 }) {
           <div className="contact-background">
 
             <div className="contactUs_modal_container lg:mt-5">
-              <IoReturnUpBack onClick={handleGoBack} className="bg-black text-[var(--yellow)] rounded-full text-4xl p-2 font-bold md:mx-[12rem] cursor-pointer" />
+              <IoReturnUpBack onClick={handleGoBack} className="bg-[var(--yellow)] text-[black] rounded-full text-4xl p-2 font-bold md:mx-[12rem] cursor-pointer" />
               <h3 className="text-center font-semibold text-xl lg:text-2xl py-2">Request A Free Demo</h3>
               <p className="text-center text-base lg:text-lg pb-3 lg:pb-6 text-[#667085]">
                 We’d love to hear from you. Please fill out this form.
@@ -60,7 +60,7 @@ function RequestPage({ setShowPopup2 }) {
                   type="text"
                   required
                   autoComplete="off"
-                  placeholder="First Name"
+                  placeholder="Full Name"
                   name="from_name"
                   className="text-xs h-8 placeholder-[var(--yellow)]"
                   onChange={handleChange}
@@ -71,14 +71,14 @@ function RequestPage({ setShowPopup2 }) {
                   required
                   autoComplete="off"
                   name="email_id"
-                  placeholder="you@company.com"
+                  placeholder="Email Id"
                   className="text-xs h-8 placeholder-[var(--yellow)]"
                   onChange={handleChange}
                 />
                 <div className="bg-black rounded ">
                   <select required onChange={handleChange} name="country_code" id="" className="text-xs h-8 placeholder-[var(--yellow)] text-[var(--yellow)]">
-                    <option value="+1">US</option>
                     <option value="+91">IND</option>
+                    <option value="+1">US</option>
                     <option value="+86">CHN</option>
                     <option value="+33">FRA</option>
                     <option value="+7">RUS</option>
@@ -90,11 +90,10 @@ function RequestPage({ setShowPopup2 }) {
                     required
                     autoComplete="off"
                     name="mobile_no"
-                    placeholder="+91 1234567890"
+                    placeholder="Mobile Number"
                     onChange={handleChange}
                     className="w-[70%] outline-none text-xs h-8 placeholder-[var(--yellow)]"
                   />
-
                 </div>
                 <input
                   type="text"
@@ -111,7 +110,7 @@ function RequestPage({ setShowPopup2 }) {
                   <option value="CHANAKYA">CHANAKYA</option>
                   <option value="NatFlow">NatFlow</option>
                   <option value="PayYes">PayYes</option>
-                  <option value="RADM">RADM</option>
+                  <option value="RADMX">RADMX</option>
                 </select>
 
                 <label htmlFor="textarea" className="text-sm leading-[1px]">Tentative Use Case/Comments</label>

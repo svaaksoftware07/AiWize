@@ -1,5 +1,6 @@
 
 import NotFound from "../components/error/NotFound";
+import PrivacyPolicy from "../components/privacyPolicy/PrivacyPolicy";
 import About from "../pages/about/About";
 import Blogs from "../pages/blogs/Blogs" ;
 import BlogPage from "../pages/blogs/RecentBlog/BlogPage/BlogPage";
@@ -16,6 +17,8 @@ const data=[
     {path:"/contact", name:"Contact",element:<Contact/> , isPrivate:false},
     {path:"/product/:name", name:"Product Name",element:<Products/> , isPrivate:false},
     {path:"/blog/:id", name:"Blog Name",element:<BlogPage/> , isPrivate:false},
+    {path:"/privacy-policy", name:"Privacy Policy",element:<PrivacyPolicy/> , isPrivate:false},
+
 ]
 
 export default data

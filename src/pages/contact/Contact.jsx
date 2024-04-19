@@ -49,7 +49,7 @@ function Contact({ setShowPopup }) {
             <div className="contactUs_modal_container">
               <IoReturnUpBack 
               onClick={handleGoBack} 
-              className="bg-black text-[var(--yellow)] rounded-full text-4xl p-2 font-bold md:mx-[12rem] cursor-pointer" 
+              className="bg-[var(--yellow)] text-[black] rounded-full text-4xl p-2 font-bold md:mx-[12rem] cursor-pointer" 
               />
               <h3 className="text-center font-semibold text-2xl py-2">Contact Us</h3>
               <p className="text-center text-lg pb-6 text-[#667085]">
@@ -62,8 +62,8 @@ function Contact({ setShowPopup }) {
                   required
                   onChange={handleChange}
                   name="from_name"
-                  placeholder="First Name"
-                  className="text-xs h-8 placeholder-[var(--yellow)]"
+                  placeholder="Full Name"
+                  className="text-xs h-8 placeholder-[var(--yellow)] contact_input"
                 />
 
                 <input
@@ -71,14 +71,14 @@ function Contact({ setShowPopup }) {
                   required
                   name="email_id"
                   onChange={handleChange}
-                  placeholder="you@company.com"
-                  className="text-xs h-8 placeholder-[var(--yellow)]"
+                  placeholder="Email Id"
+                  className="text-xs h-8 placeholder-[var(--yellow)] contact_input"
                 />
 
                 <div className="bg-black text-[var(--yellow)] rounded ">
                   <select onChange={handleChange} required name="country_code" id="" className="text-xs h-8 placeholder-[var(--yellow)]">
-                    <option value="+1">US</option>
                     <option value="+91">IND</option>
+                    <option value="+1">US</option>
                     <option value="+86">CHN</option>
                     <option value="+33">FRA</option>
                     <option value="+7">RUS</option>
@@ -89,8 +89,8 @@ function Contact({ setShowPopup }) {
                     required
                     onChange={handleChange}
                     name="mobile_no"
-                    placeholder="+91 1234567890"
-                    className="w-[70%] outline-none text-xs h-8 placeholder-[var(--yellow)]"
+                    placeholder="Mobile Number"
+                    className="w-[70%] outline-none text-xs h-8 placeholder-[var(--yellow)] contact_input"
                   />
                 </div>
 

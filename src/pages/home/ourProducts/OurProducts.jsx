@@ -36,7 +36,7 @@ const OurProducts = () => {
 
   const navigate=useNavigate()
   return (
-    <div className="OurProduct h-auto over" id="our-product">
+    <div className="OurProduct h-auto over" id="home_product_section">
       <h1 className="text-center heading_1 pb-6 w-100">
         Our <span>Products</span> & <span>Services</span>
       </h1>

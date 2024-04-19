@@ -49,7 +49,7 @@ function Navbar() {
     return (
         <>
             <nav className="nav-main-header pb-5 z-20">
-                <div className="max-w-[96vw] mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-[90vw] mx-auto">
                     <div className="flex justify-between items-center h-20 md:h-28">
                         <div className="nav-menu">
                             <div className="flex-shrink-0 flex items-center">
@@ -92,7 +92,7 @@ function Navbar() {
                                 <span>Request A Free Demo</span>
                             </div>
                         </div>
-                        <div className='block md:hidden bg-[var(--yellow)] py-1 px-3 rounded-full'>
+                        <div className='menu-icon bg-[var(--yellow)] py-1 px-3 rounded-full'>
                             <BiMenuAltRight className='text-3xl text-black ' onClick={navClickHandler} />
                         </div>
                     </div>

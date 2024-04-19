@@ -22,11 +22,11 @@ function FreeDemo() {
             {showPopup1 && <ProductPopUp setShowPopup1={setShowPopup1} />}
 
             {/* Try our free demos  */}
-            <div className="flex justify-center items-end px-3 pt-10 flex-col md:px-16 md:h-[700px] xl:h-screen bg-[#fffbe5]">
+            <div className="flex justify-center items-end px-3 pt-10 flex-col lg:px-16 md:h-[700px] lg:h-[700px] xl:h-screen bg-[#fffbe5]">
                 <div
                     data-aos="zoom-in-down"
                     className='md:flex md:p-12 md:pb-0 flex-row w-[100%] items-end rounded-xl  bg-cover md:bg-[#f5f5f5]'>
-                    <div className=" md:p-8 md:w-[55%]">
+                    <div className=" lg:p-8 md:w-[60%] xl:w-[55%]">
                         <div className='mb-5'>
                             <h1 className='heading_1 text-center md:text-start mb-5'>Try our free Demos</h1>
 
@@ -44,7 +44,7 @@ function FreeDemo() {
                                >Explore All Products</p>
                         </div>
                     </div>
-                    <div className=" hidden md:block w-screen md:p-5 md:pb-0 md:w-[45%]">
+                    <div className=" hidden md:block w-screen md:p-5 md:pb-0 md:w-[40%] xl:w-[45%]">
                         <img src="/images/home/tryWomen.png" className='w-[100%] h-[100%] object-cover' alt="" />
                     </div>
                 </div>

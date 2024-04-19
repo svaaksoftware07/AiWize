@@ -19,7 +19,7 @@ const AllBlogs = () => {
   return (
     <div
      data-aos="fade-right"
-     className="flex flex-col py-10 h-auto bg-white md:h-[700px] xl:h-screen"
+     className="flex flex-col py-0 h-auto bg-white md:h-[700px] xl:h-screen"
      >
       <div>
         <h1 className="text-center heading_1 pb-6">
@@ -31,11 +31,11 @@ const AllBlogs = () => {
           <div key={index} className="w-100 md:w-[20%] flex flex-col gap-3 md:gap-5 h-full md:h-[450px] relative ">
             <img src={blog.image} alt="" className="w-100 h-100 object-cover"/>
             <span className="text-gray-500 text-xs py-1 border-b-[1px] border-gray-500">{blog.date}</span>
-            <h3 className="font-medium text-base leading-5">
+            <h3 className="font-medium text-base leading-6">
               {blog.title}
             </h3>
             <div className="flex justify-center md:justify-start md:absolute bottom-0 ">
-            <button className="bg-[var(--yellow)]  w-[150px] rounded-full p-2  mb-8" onClick={() => handleBlog(blog.id)}> Read More </button>
+            <button className="bg-[var(--yellow)] w-[150px] rounded-full p-2  mb-4" onClick={() => handleBlog(blog.id)}> Read More </button>
             </div>
           </div>
         ))}

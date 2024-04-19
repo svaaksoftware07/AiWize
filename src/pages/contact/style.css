@@ -14,11 +14,19 @@
 
 .contactUs_modal_container input,
 .contactUs_modal_container select,
-.contactUs_modal_container textarea,
-.contactUs_modal_container button {
+.contactUs_modal_container textarea {
   background-color: black;
   color: var(--yellow);
   border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.contactUs_modal_container button{
+  background-color:var(--yellow);
+  color: black;
+  border-radius: 5px;
+  font-weight: 600;
   padding: 0.5rem;
   font-size: 0.875rem;
 }
