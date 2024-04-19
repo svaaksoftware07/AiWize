@@ -58,7 +58,7 @@
 }
 
 .product2-hero-section-inner-one-text {
-    width: 48%;
+    width: 46%;
 }
 
 .product2-hero-section-inner-one-text p {
@@ -70,14 +70,14 @@
 
 
 .product2-hero-middle-arrow {
-    width: 4%;
+    width: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .product2-hero-section-inner-two-text {
-    width: 48%;
+    width: 46%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +96,7 @@
     color: var(--yellow);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    font-size: 4.2em;
+    font-size: 5em;
     line-height: 120%;
     position: relative;
     transition: all .3s ease;

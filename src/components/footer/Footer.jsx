@@ -52,13 +52,11 @@ function Footer() {
     {
       title:{name:<span onClick={() => setShowPopup(true)}>Contact Us</span>,url:"#"},
       links: [
-        {
-          name: <span className=" flex gap-4  mb-3 justify-start lg:justify-center">
-            <Link to="mailto:info@aiwizelabs.com"><IoMail className="text-[#3391FF] text-[28px] " />
-            </Link><Link to="whatsapp://send?text=&phone=9818258199"><IoLogoWhatsapp className=" text-[28px] text-[#33FF47]" />
-            </Link><Link to="tel:9818258199"><IoCall className="text-[#FFD233] text-[28px] " /></Link></span>,
-          contact: true
-        }
+       
+          {name:<span className="flex lowercase"><IoMail className="text-[#FFD233] text-[20px] mr-1" />Info@aiwizelabs.com</span>},
+          {name:<span className="flex lowercase"><IoLogoWhatsapp className=" text-[20px] text-[#33FF47] mr-1" />+91 9818258199</span>},
+          {name:<span className="flex lowercase"><IoCall className="text-[#FFD233] text-[20px] mr-1 " />+91 9818258199</span>},
+    
       ],
     },
   ];
@@ -86,7 +84,7 @@ function Footer() {
         <div className="flex flex-wrap justify-start lg:justify-start footer2">
           <span className="footer2_span pl-4 lg:pl-10 pr-6 mb-3">
             <h3 className="text-[1.3rem]">CONNECT WITH US </h3>
-            <span className="flex gap-3 text-2xl font-bold my-4 md:mx-4 text-white">
+            <span className="flex gap-3 text-2xl font-bold my-4 md:mr-4 text-white">
               <Link to="#"><FaLinkedinIn className="border p-1 rounded-full cursor-pointer  text-3xl" /></Link>
               <Link to="#"><FaFacebookF className="border p-1 rounded-full cursor-pointer text-3xl" /></Link>
               <Link to="#"><ImYoutube className="border p-1 rounded-full cursor-pointer text-3xl" /></Link>

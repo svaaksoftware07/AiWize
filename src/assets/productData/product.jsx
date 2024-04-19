@@ -13,8 +13,8 @@ const products = [
     description: "The Generative AI Based Business Rule Engine",
     tagline: "Mind within Mind",
     image: "/images/successIcon.png",
-    leftText1: "Empowering Business for",
-    leftText2: "Ease of Use & Efficiency",
+    leftText1: "Empowering Business for Ease of",
+    leftText2: "Use & Efficiency",
     rightText: "Natural Language Processing and Generative AI",
     button: "Watch How It Works",
     heading: (
@@ -41,7 +41,7 @@ const products = [
   },
   {
     name: "NatFlow",
-    productImage:"/images/product/productImage.png",
+    productImage:"/gif/product/NATFLOW.gif",
     googleId:"G-T4VEBL59QJ",
     bannerImage: "/images/product/pruductHeroBg2.png",
     bannerImage2: "/images/product/pruductHeroBg22.png",
@@ -70,13 +70,14 @@ const products = [
   },
   {
     name: "PayYes",
-    productImage:"/images/product/productImage.png",
+    productImage:"/gif/product/payYes.gif",
     googleId:"G-LBMQCNZGDZ",
     bannerImage: "/images/product/pruductHeroBg3.png",
     bannerImage2: "/images/product/pruductHeroBg33.png",
     description: "Enterprise Collections Suite", 
     tagline: "Collect More, and Now",
-    leftText1: "Universe of Features in Collection Space, high on No-Code",
+    leftText1: "Universe of Features in Collection Space,",
+    leftText2:" high on No-Code",
     rightText: "Enterprise Collections Suite",
     button: "Explore Now",
     heading: (
@@ -104,7 +105,7 @@ const products = [
   {
     name: "RADM",
     span: "x",
-    productImage:"/images/product/productImage.png",
+    productImage:"/gif/product/raidMax.gif",
     googleId:"",
     bannerImage: "/images/product/pruductHeroBg4.png",
     bannerImage2: "/images/product/pruductHeroBg44.png",
@@ -137,7 +138,7 @@ const products = [
     productVideoContent: [
       "BRD",
       "Solution Detailing ",
-      "Accelerated Development & Reviews Sprints leveraging RADMx",
+      "Accelerated Development & Reviews Sprints leveraging RADMX",
       "Delivery",
       "Scalability to nth degree",
     ],

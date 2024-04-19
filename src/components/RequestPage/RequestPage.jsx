@@ -17,7 +17,7 @@ function RequestPage({ setShowPopup2 }) {
     organization_name: "",
     mobile_no: "",
     email_id: "",
-    country_code: "",
+    country_code: "+91",
     product_name: "",
     message: ""
   });
@@ -25,7 +25,7 @@ function RequestPage({ setShowPopup2 }) {
   // send email 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = `${import.meta.env.VITE_URL}/request-demo.php?name=${emailData.from_name}&mobile=${emailData.country_code}${emailData.mobile_no}&email=${emailData.email_id}&organizationName=${emailData.organization_name}&productName=${emailData.product_name}&comments=${emailData.message}&key=${import.meta.env.VITE_KEY}`
+    window.location.href = `${import.meta.env.VITE_URL}/request-demo.php?name=${emailData.from_name}&mobile=${emailData.country_code} ${emailData.mobile_no}&email=${emailData.email_id}&organizationName=${emailData.organization_name}&productName=${emailData.product_name}&comments=${emailData.message}&key=${import.meta.env.VITE_KEY}`
     handleGoBack()
   };
 
@@ -53,7 +53,7 @@ function RequestPage({ setShowPopup2 }) {
             <div className="contactUs_modal_container lg:mt-5">
               <IoReturnUpBack onClick={handleGoBack} className="bg-[var(--yellow)] text-[black] rounded-full text-4xl p-2 font-bold md:mx-[12rem] cursor-pointer" />
               <h3 className="text-center font-semibold text-xl lg:text-2xl py-2">Request A Free Demo</h3>
-              <p className="text-center text-base lg:text-lg pb-3 lg:pb-6 text-[#667085]">
+              <p className="text-center text-base  pb-3 lg:pb-6 text-[#667085]">
                 We’d love to hear from you. Please fill out this form.
               </p>
               <form onSubmit={handleSubmit} className="flex flex-col gap-4 px-5 md:w-96 lg:w-1/2 mx-auto">

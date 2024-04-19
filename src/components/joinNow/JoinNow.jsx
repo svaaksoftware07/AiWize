@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 function JoinNow() {
+  const [email, setEmail] = useState("")
+  function handleSubmit(e) {
+    e.preventDefault();
+   window.location.href=`${import.meta.env.VITE_URL}/joinNow.php?email=${email}&key=${import.meta.env.VITE_KEY}`
+  }
   return (
     <>
       <div className="md:h-[380px] bg-[#191919] py-16 ">
@@ -13,16 +20,20 @@ function JoinNow() {
                 community
               </p>
             </div>
-            <div className="flex justify-between items-center bg-white rounded-full p-1">
-              <input
-                className="md:py-2 px-2 md:px-4 border-none outline-none text-[12px] md:text-[15px] md:w-[250px] rounded-full"
-                type="text"
-                placeholder="Enter Your Email"
-              />
-              <span className="w-[7rem] font-bold py-3 flex items-center justify-center bg-[var(--yellow)] text-[.89rem] md:text-xs rounded-full cursor-pointer text-center">
-                Join Now
-              </span>
-            </div>
+            <form onSubmit={handleSubmit}>
+              <div className="flex justify-between items-center bg-white rounded-full p-1">
+                <input
+                  className="md:py-2 px-2 md:px-4 border-none outline-none text-[12px] md:text-[15px] md:w-[250px] rounded-full"
+                  type="email"
+                  placeholder="Enter Your Email"
+                  required
+                  onChange={(e)=>setEmail(e.target.value)}
+                />
+                <button type="submit" className="w-[7rem] font-bold py-3 flex items-center justify-center bg-[var(--yellow)] text-[.89rem] md:text-xs rounded-full cursor-pointer text-center">
+                  Join Now
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

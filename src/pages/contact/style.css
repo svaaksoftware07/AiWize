@@ -22,6 +22,27 @@
   font-size: 0.875rem;
 }
 
+
+
+.contactUs_modal_container select:-webkit-autofill,
+.contactUs_modal_container select:-webkit-autofill:hover, 
+.contactUs_modal_container select:-webkit-autofill:focus, 
+.contactUs_modal_container select:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(10, 9, 9) inset !important;
+}
+.contactUs_modal_container select:-webkit-autofill{
+  -webkit-text-fill-color: var(--yellow) !important;
+}
+
+.contactUs_modal_container input:-webkit-autofill,
+.contactUs_modal_container input:-webkit-autofill:hover, 
+.contactUs_modal_container input:-webkit-autofill:focus, 
+.contactUs_modal_container input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(10, 9, 9) inset !important;
+}
+.contactUs_modal_container input:-webkit-autofill{
+  -webkit-text-fill-color: var(--yellow) !important;
+}
 .contactUs_modal_container button{
   background-color:var(--yellow);
   color: black;

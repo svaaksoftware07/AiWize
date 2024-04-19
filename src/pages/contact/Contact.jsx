@@ -16,12 +16,12 @@ function Contact({ setShowPopup }) {
     organization_name: "",
     mobile_no: "",
     email_id: "",
-    country_code:""
+    country_code:"+91"
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href =`${import.meta.env.VITE_URL}/contact.php?name=${emailData.from_name}&mobile=${emailData.country_code}${emailData.mobile_no}&email=${emailData.email_id}&organizationName=${emailData.organization_name}&key=${import.meta.env.VITE_KEY}`
+    window.location.href =`${import.meta.env.VITE_URL}/contact.php?name=${emailData.from_name}&mobile=${emailData.country_code} ${emailData.mobile_no}&email=${emailData.email_id}&organizationName=${emailData.organization_name}&key=${import.meta.env.VITE_KEY}`
     handleGoBack()
   };
 
@@ -53,7 +53,7 @@ function Contact({ setShowPopup }) {
               className="bg-[var(--yellow)] text-[black] rounded-full text-4xl p-2 font-bold md:mx-[12rem] cursor-pointer" 
               />
               <h3 className="text-center font-semibold text-2xl py-2">Contact Us</h3>
-              <p className="text-center text-lg pb-6 text-[#667085]">
+              <p className="text-center text-base pb-6 text-[#667085]">
                 We’d love to hear from you. Please fill out this form.
               </p>
               <form onSubmit={ handleSubmit } className="flex flex-col gap-4 px-5 md:w-96 lg:w-1/2 mx-auto">
@@ -61,6 +61,7 @@ function Contact({ setShowPopup }) {
                   type="text"
                   autoComplete="off"
                   required
+                  autocomplete="off"
                   onChange={handleChange}
                   name="from_name"
                   placeholder="Full Name"
@@ -70,6 +71,7 @@ function Contact({ setShowPopup }) {
                 <input
                   type="email"
                   required
+                  autocomplete="off"
                   name="email_id"
                   onChange={handleChange}
                   placeholder="Email Id"
@@ -77,7 +79,7 @@ function Contact({ setShowPopup }) {
                 />
 
                 <div className="bg-black text-[var(--yellow)] rounded ">
-                  <select onChange={handleChange} required name="country_code" id="" className="text-xs h-8 placeholder-[var(--yellow)]">
+                  <select onChange={handleChange} required autocomplete="off" name="country_code" id="" className="text-xs h-8 placeholder-[var(--yellow)]">
                     <option value="+91">IND</option>
                     <option value="+1">US</option>
                     <option value="+86">CHN</option>
@@ -88,6 +90,7 @@ function Contact({ setShowPopup }) {
                   <input
                     type="tel"
                     required
+                    autocomplete="off"
                     onChange={handleChange}
                     name="mobile_no"
                     placeholder="Mobile Number"
@@ -99,6 +102,7 @@ function Contact({ setShowPopup }) {
                   type="text"
                   autoComplete="off"
                   required
+                  autocomplete="off"
                   name="organization_name"
                   onChange={handleChange}
                   placeholder="Name of the Organisation"

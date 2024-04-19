@@ -31,13 +31,13 @@ function ProductHero({ data }) {
           <div className='product2-hero-sectio-one'>
 
             <div className='product2-hero-section-tagline'>
-              <p className='bg-[#262626]'><img src='/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>We Make AI Work Hard</i></p>
+              <p className='bg-[#262626]'><img src='/images/successIcon.png' alt='' className='mx-2' /><i className='pr-3'>{data.tagline}</i></p>
             </div>
 
             <div className="product2-hero-section-content">
               <div className='product2-hero-section-inner-one-text'>
-              <p>{data.leftText1}</p>
-                    <p>{data.leftText2}</p>
+                <p>{data.leftText1}</p>
+                <p>{data.leftText2}</p>
               </div>
               <div className='product2-hero-middle-arrow'>
                 <img src="/gif/home/arrowGIF.gif" className='h-14 md:rotate-90' alt="" />
@@ -50,7 +50,7 @@ function ProductHero({ data }) {
                     <h1 className='product1-hero-section-heading'>{data.name}<span className='mx-2'>{data?.span}</span></h1>
                   </div>
                   <div className='product2-hero-floating-text'>
-                  <p>{data.description}<sup>{data.span2}</sup>{data.description2}</p>
+                    <p>{data.description}<sup>{data.span2}</sup>{data.description2}</p>
                   </div>
                 </div>
               </div>

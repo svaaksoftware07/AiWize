@@ -45,7 +45,7 @@ const ProductPageVideo = ({productVideoContent}) => {
 
       <div className="w-full xl:w-[50%] flex flex-col justify-center gap-5 px-[10vw] md:px-[5vw] py-10">
         <div>
-          <h5 className="text-[#FFDA14] font-bold">
+          <h5 className="text-[#FFDA14] font-bold mb-3">
             What’s in it for the User -
           </h5>
           <h3 className="text-[7vw] md:text-[2.8vw] leading-[3rem] font-medium">
