@@ -3,6 +3,7 @@ import "./style.css";
 import { Helmet } from "react-helmet";
 import { IoReturnUpBack } from "react-icons/io5";
 import {  useState } from "react";
+import { Link } from "react-router-dom";
 
 function Contact({ setShowPopup }) {
   const handleGoBack = () => {
@@ -108,7 +109,7 @@ function Contact({ setShowPopup }) {
                   <input type="checkbox"
                   required
                    />
-                  <p>You agree to our friendly Privacy Policy.</p>
+                  <p>You agree to our friendly <Link to={"/privacy-policy"} target="_blank" className="text-blue-950 underline"> Privacy Policy.</Link></p>
                 </div>
                 <button type="submit" >Submit</button>
               </form>

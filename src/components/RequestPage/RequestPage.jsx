@@ -2,6 +2,7 @@
 import { Helmet } from "react-helmet";
 import { IoReturnUpBack } from "react-icons/io5";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 function RequestPage({ setShowPopup2 }) {
@@ -125,7 +126,7 @@ function RequestPage({ setShowPopup2 }) {
                 <div className="flex gap-1">
                   <input type="checkbox"
                     required />
-                  <p className="text-[12px]">You agree to our friendly Privacy Policy.</p>
+                  <p className="text-[12px]">You agree to our friendly <Link to={"/privacy-policy"} target="_blank" className="text-blue-950 underline"> Privacy Policy.</Link></p>
                 </div>
                 <button type="submit" >Submit</button>
               </form>

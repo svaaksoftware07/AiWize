@@ -6,7 +6,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ProductPopUp from "../productPopUp/ProductPopUp";
-import { IoIosMail } from "react-icons/io";
 import { IoCall, IoLogoWhatsapp, IoMail } from "react-icons/io5";
 import Contact from "../../pages/contact/Contact";
 
@@ -45,8 +44,8 @@ function Footer() {
       title: {name:"Resources",url:"#"},
       links: [
         { name: "Blogs", url: "/blogs" },
-        { name: "Privacy Policy", url: "#" },
-        { name: "terms & conditions", url: "#" },
+        { name: "Privacy Policy", url: "/privacy-policy" },
+        { name: "terms & conditions", url: "/terms-conditions" },
 
       ],
     },
